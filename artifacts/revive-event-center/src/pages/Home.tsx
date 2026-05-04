@@ -210,31 +210,58 @@ export default function Home() {
               </Button>
             </div>
 
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-5 md:gap-6">
               {[
-                { title: "Weddings", image: images.weddings, desc: "Blush, ivory, gold — your color story, our ballroom." },
-                { title: "Quinceañeras", image: images.quinceaneras, desc: "A majestic setting for her milestone celebration." },
-                { title: "Corporate Events", image: images.corporate, desc: "Rows of seating, AV-ready stage area, and a polished room for galas, summits, and meetings." },
-                { title: "Concerts & Comedy", image: images.concerts, desc: "Built-in stage, drape backdrop, and programmable LED uplighting for live shows." },
-                { title: "Holiday Parties", image: images.holiday, desc: "Festive gatherings in a warm, fully styled room." },
-                { title: "Proms", image: images.prom, desc: "Unforgettable nights of dancing and memories." },
-                { title: "Birthdays", image: images.birthdays, desc: "Celebrate another year in style." },
-                { title: "Anniversaries", image: images.anniversaries, desc: "Mark the milestones that matter most." },
-                { title: "Fundraisers", image: images.fundraisers, desc: "An elevated room for galas and giving." },
-                { title: "Memorials", image: images.memorials, desc: "A respectful, dignified space to gather." }
+                {
+                  eyebrow: "01",
+                  title: "Weddings & Quinceañeras",
+                  image: images.weddings,
+                  desc: "Elegant, fully customizable layouts designed for milestone celebrations.",
+                  alt: "Blush and ivory wedding reception styled inside the Revive ballroom",
+                },
+                {
+                  eyebrow: "02",
+                  title: "Corporate & Formal Events",
+                  image: images.corporate,
+                  desc: "Clean, professional setups with room for presentations, dining, and large groups.",
+                  alt: "Wide ballroom set with rows of round tables and chiavari chairs for a corporate event",
+                },
+                {
+                  eyebrow: "03",
+                  title: "Live Events — Concerts & Comedy",
+                  image: images.concerts,
+                  desc: "Stage-ready layout with programmable lighting and flexible seating for performances.",
+                  alt: "Comedy night at Revive with performer on stage and seated audience under red uplighting",
+                },
+                {
+                  eyebrow: "04",
+                  title: "Private Celebrations",
+                  image: images.birthdays,
+                  desc: "Birthdays, anniversaries, and gatherings tailored to your vision.",
+                  alt: "Lush greenery wall and floral centerpieces inside the Revive ballroom",
+                },
               ].map((event, i) => (
-                <motion.div 
-                  key={i}
-                  initial={{ opacity: 0, scale: 0.95 }}
-                  whileInView={{ opacity: 1, scale: 1 }}
-                  viewport={{ once: true }}
-                  transition={{ delay: i * 0.05, duration: 0.4 }}
-                  className="group relative aspect-[4/5] rounded-2xl overflow-hidden cursor-pointer"
+                <motion.div
+                  key={event.title}
+                  initial={{ opacity: 0, y: 24 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true, margin: "-80px" }}
+                  transition={{ delay: i * 0.08, duration: 0.5, ease: [0.16, 1, 0.3, 1] }}
+                  className="group relative aspect-[5/4] rounded-2xl overflow-hidden bg-muted"
                 >
-                  <img src={event.image} alt={event.title} className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent flex flex-col justify-end p-6">
-                    <h3 className="text-white text-xl font-medium mb-1">{event.title}</h3>
-                    <p className="text-white/80 text-sm opacity-0 group-hover:opacity-100 transition-opacity duration-300 transform translate-y-4 group-hover:translate-y-0">{event.desc}</p>
+                  <img
+                    src={event.image}
+                    alt={event.alt}
+                    loading="lazy"
+                    className="w-full h-full object-cover transition-transform duration-[900ms] ease-out group-hover:scale-[1.04]"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/35 to-transparent" />
+                  <div className="absolute inset-0 flex flex-col justify-end p-7 md:p-8">
+                    <span className="text-primary text-xs font-semibold tracking-[0.25em] mb-3">{event.eyebrow}</span>
+                    <h3 className="text-white text-2xl md:text-[28px] font-serif font-medium leading-tight mb-2 [text-shadow:0_1px_20px_rgba(0,0,0,0.4)]">
+                      {event.title}
+                    </h3>
+                    <p className="text-white/85 text-[15px] leading-relaxed max-w-[34ch]">{event.desc}</p>
                   </div>
                 </motion.div>
               ))}

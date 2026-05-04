@@ -1,0 +1,112 @@
+Yeah, I see exactly what you mean now.
+
+This section is where your site starts drifting again.
+
+🔍 What’s wrong with this layout
+1. It feels like a Pinterest board
+Random images
+No hierarchy
+No clear “this is what you’re buying”
+
+Instead of:
+
+“Here’s what your event could look like”
+
+It feels like:
+
+“Here are some pictures”
+
+2. Too many directions at once
+
+You’ve got:
+
+Weddings (soft pink)
+Quince (red + black)
+Corporate / banquet (blue)
+Comedy show (stage)
+
+All jammed together with equal weight.
+
+👉 That confuses the customer:
+They don’t know what YOU specialize in.
+
+3. The text is weak under each
+
+Example:
+
+“Blush, ivory, gold — your color story, our ballroom.”
+
+That’s fluff again.
+
+💡 What you should do instead (this is the fix)
+✅ Option A (Best for conversion)
+
+Turn this into 4 strong categories only
+
+Weddings & Quinceañeras  
+Corporate & Formal Events  
+Live Events (Concerts / Comedy)  
+Private Celebrations
+
+Each gets:
+
+ONE strong image
+ONE clear line (not poetic)
+Example rewrite:
+
+Weddings & Quinceañeras
+Elegant, fully customizable layouts designed for milestone celebrations.
+
+Corporate & Formal Events
+Clean, professional setups with space for presentations, dining, and large groups.
+
+Live Events (Concerts & Comedy)
+Stage-ready layout with lighting and flexible seating for performances.
+
+Private Celebrations
+Birthdays, anniversaries, and gatherings tailored to your vision.
+
+❌ What to REMOVE
+The 2x2 grid with mixed vibes
+Duplicate “Weddings / Weddings” titles
+Fluffy subtext
+Too many categories
+✅ Option B (if you want to keep visuals heavy)
+
+Make it a horizontal scroll or carousel
+
+Each slide:
+
+Full-width image
+Big label (Weddings, Corporate, etc.)
+Minimal text
+
+Feels more premium.
+
+🔥 What I’d tell Replit (copy/paste this)
+Replace the current "Celebrations We Host" image grid.
+
+Remove the 2x2 mixed photo layout and duplicate category titles.
+
+Instead, create 4 clear event categories:
+
+- Weddings & Quinceañeras
+- Corporate & Formal Events
+- Live Events (Concerts & Comedy)
+- Private Celebrations
+
+Each category should:
+- Use one strong, representative image
+- Have a clear, non-fluffy one-line description
+- Be visually consistent in tone
+
+Do not mix drastically different event styles side-by-side in equal weight.
+
+The section should feel structured, premium, and easy to scan — not like a random photo gallery.
+🧠 Bottom line
+
+Right now:
+👉 You’re showing variety
+
+But what you need:
+👉 Show control + clarity
