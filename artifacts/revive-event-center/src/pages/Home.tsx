@@ -71,7 +71,7 @@ export default function Home() {
               </motion.h1>
               
               <motion.p variants={fadeInUp} className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto font-light leading-relaxed">
-                Central Merced's premier upscale destination for weddings, quinceañeras, corporate galas, and milestone celebrations. Step into the golden-lit elegance of a freshly renovated ballroom.
+                Central Merced's premier upscale destination for weddings, quinceañeras, corporate galas, concerts, and milestone celebrations. Step into the golden-lit elegance of a freshly renovated ballroom.
               </motion.p>
               
               <motion.div variants={fadeInUp} className="flex flex-col sm:flex-row items-center justify-center gap-4 pt-8 w-full max-w-md mx-auto sm:max-w-none">
@@ -148,7 +148,8 @@ export default function Home() {
                 { icon: MapPin, title: "Central Merced Location", desc: "Conveniently located at 443 West 18th Street with easy access." },
                 { icon: CheckCircle2, title: "Tables & Chairs Included", desc: "Premium seating and tables provided for your entire guest list." },
                 { icon: GlassWater, title: "Kitchen & Bar Access", desc: "Fully equipped prep kitchen and elegant bar setup for your caterers." },
-                { icon: PartyPopper, title: "All Event Types", desc: "Designed for weddings, quinceañeras, corporate events, and milestone celebrations." }
+                { icon: BookOpen, title: "All-Inclusive Packages", desc: "Ask about all-inclusive per-person packages covering venue, catering, service charge, and tax." },
+                { icon: PartyPopper, title: "Built for Every Celebration", desc: "Designed for weddings, quinceañeras, corporate events, concerts, memorials, and milestone celebrations." }
               ].map((feature, i) => (
                 <motion.div 
                   key={i}
