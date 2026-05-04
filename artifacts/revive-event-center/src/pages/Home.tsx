@@ -159,6 +159,45 @@ export default function Home() {
           </div>
         </section>
 
+        {/* SEE THE SCALE — full-bleed venue showcase */}
+        <section className="relative h-[80vh] min-h-[520px] md:min-h-[640px] w-full overflow-hidden">
+          <img
+            src={images.scaleFront}
+            alt="The full Revive Event Center ballroom set with rows of round tables, chiavari chairs, chandeliers, and signature blue LED ceiling uplighting"
+            className="absolute inset-0 w-full h-full object-cover"
+            loading="lazy"
+          />
+          <div className="absolute inset-0 bg-gradient-to-r from-black/75 via-black/40 to-black/20" />
+          <div className="relative z-10 h-full max-w-7xl mx-auto px-6 flex items-center">
+            <motion.div
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, margin: "-100px" }}
+              transition={{ duration: 0.7, ease: [0.16, 1, 0.3, 1] }}
+              className="max-w-xl text-white space-y-6"
+            >
+              <span className="text-primary text-sm font-semibold uppercase tracking-[0.25em]">See the Scale</span>
+              <h2 className="text-4xl md:text-5xl lg:text-6xl font-serif font-medium leading-[1.05] [text-shadow:0_2px_30px_rgba(0,0,0,0.5)]">
+                Room for 350. <br className="hidden md:block" />
+                Setup for any vision.
+              </h2>
+              <p className="text-lg text-white/90 leading-relaxed [text-shadow:0_1px_20px_rgba(0,0,0,0.5)]">
+                Round tables, banquet rows, dance floors, stages with drape backdrops — our open-floor ballroom transforms to the room your event needs, not the other way around.
+              </p>
+              <div className="flex flex-col sm:flex-row gap-4 pt-2">
+                <Button asChild size="lg" className="bg-primary text-primary-foreground hover:bg-primary/90 h-14 px-8 shadow-lg">
+                  <a href="#book">
+                    Book a Walkthrough <ArrowRight className="ml-2 w-4 h-4" />
+                  </a>
+                </Button>
+                <Button asChild variant="outline" size="lg" className="h-14 px-8 bg-background/10 border-white/40 text-white hover:bg-background/20 hover:text-white backdrop-blur-sm">
+                  <a href="#gallery">See More Photos</a>
+                </Button>
+              </div>
+            </motion.div>
+          </div>
+        </section>
+
         {/* EVENT TYPES */}
         <section id="celebrations" className="py-24 md:py-32 bg-card border-y border-border scroll-mt-20">
           <div className="max-w-7xl mx-auto px-6">
@@ -176,8 +215,8 @@ export default function Home() {
               {[
                 { title: "Weddings", image: images.weddings, desc: "Blush, ivory, gold — your color story, our ballroom." },
                 { title: "Quinceañeras", image: images.quinceaneras, desc: "A majestic setting for her milestone celebration." },
-                { title: "Corporate Events", image: images.corporate, desc: "Polished navy-and-gold staging for galas and meetings." },
-                { title: "Concerts", image: images.concerts, desc: "Programmable LED uplighting and a wide, open floor." },
+                { title: "Corporate Events", image: images.corporate, desc: "Rows of seating, AV-ready stage area, and a polished room for galas, summits, and meetings." },
+                { title: "Concerts & Comedy", image: images.concerts, desc: "Built-in stage, drape backdrop, and programmable LED uplighting for live shows." },
                 { title: "Holiday Parties", image: images.holiday, desc: "Festive gatherings in a warm, fully styled room." },
                 { title: "Proms", image: images.prom, desc: "Unforgettable nights of dancing and memories." },
                 { title: "Birthdays", image: images.birthdays, desc: "Celebrate another year in style." },

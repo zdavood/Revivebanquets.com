@@ -17,6 +17,16 @@ The site currently ships with the real Revive photo set:
   floral centerpieces
 - `setup-burgundy.jpg` — fully styled reception in crimson & ivory
 - `setup-teal.jpg` — fully styled reception in teal & ivory
+- `scale-front.jpg` — wide front-on view of the ballroom set with rows of
+  round tables and chiavari chairs under signature blue LED ceiling uplighting
+- `scale-side.jpg` — side angle of the same setup showing room width
+- `scale-angle.jpg` — angled shot showing chandeliers, depth, and seating
+- `scale-rear.jpg` — rear angle emphasizing capacity and flow
+- `comedy-wide.jpg` — comedy night with performer on stage, audience seated,
+  and dramatic red LED uplighting (proves the concert/comedy/show use case)
+- `comedy-side.jpg` — side view of the same comedy show
+- `comedy-performer.jpg` — close-up of comedian on the stage with black
+  drape backdrop and purple stage lighting
 
 All originals were down-sized and re-encoded to JPEG at quality 82–85 for
 fast page loads (typically 150–760 KB each).

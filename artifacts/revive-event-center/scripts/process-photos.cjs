@@ -11,6 +11,15 @@ const SRC = {
   exterior: path.join(ATTACHED, "IMG_7745_1777919666816.jpeg"),
   catering: path.join(ATTACHED, "CQ_1777919656550.jpeg"),
   collage: path.join(ATTACHED, "02_1777919656549.png"),
+  // Wide blue-uplit setup shots showing the venue's true scale
+  scaleFront: path.join(ATTACHED, "IMG_0097_1777920239081.jpeg"),
+  scaleSide: path.join(ATTACHED, "IMG_0095_1777920239081.jpeg"),
+  scaleAngle: path.join(ATTACHED, "IMG_0096_1777920239082.jpeg"),
+  scaleRear: path.join(ATTACHED, "IMG_0098_1777920239082.jpeg"),
+  // Comedy night — proves performance / concert use case
+  comedyWide: path.join(ATTACHED, "IMG_5997_1777920270356.jpeg"),
+  comedySide: path.join(ATTACHED, "IMG_5998_1777920270357.jpeg"),
+  comedyPerformer: path.join(ATTACHED, "FullSizeRender_1777920270357.jpeg"),
 };
 
 async function landscape(srcPath, outName, width = 2400) {
@@ -76,6 +85,14 @@ async function sliceCollage() {
   await landscape(SRC.catering, "catering.jpg", 2400);
   console.log("Slicing 6-up setup collage...");
   await sliceCollage();
+  console.log("Processing scale + performance shots...");
+  await landscape(SRC.scaleFront, "scale-front.jpg", 2400);
+  await landscape(SRC.scaleSide, "scale-side.jpg", 2400);
+  await landscape(SRC.scaleAngle, "scale-angle.jpg", 2400);
+  await landscape(SRC.scaleRear, "scale-rear.jpg", 2400);
+  await landscape(SRC.comedyWide, "comedy-wide.jpg", 2400);
+  await landscape(SRC.comedySide, "comedy-side.jpg", 2400);
+  await landscape(SRC.comedyPerformer, "comedy-performer.jpg", 2000);
   console.log("Done.");
 })().catch((e) => {
   console.error(e);
