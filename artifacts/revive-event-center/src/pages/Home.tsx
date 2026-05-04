@@ -2,7 +2,6 @@ import { motion, type Variants } from "framer-motion";
 import { ArrowRight, CalendarHeart, PhoneCall, MapPin, Instagram, Facebook, Clock, CheckCircle2, Music, PartyPopper, Users, GlassWater, BookOpen, Star } from "lucide-react";
 import { images } from "@/content/images";
 import { Button } from "@/components/ui/button";
-import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 
 const VENUESOS_TOUR = "https://venuesos.com/schedule-tour";
 const VENUESOS_INQUIRY = "https://venuesos.com/inquiry";
@@ -340,7 +339,7 @@ export default function Home() {
           </div>
         </section>
 
-        {/* BOOKING / TABBED IFRAME SECTION */}
+        {/* BOOKING SECTION */}
         <section id="book" className="py-24 md:py-32 bg-primary/5 border-t border-border relative overflow-hidden scroll-mt-20">
           <div className="absolute top-0 right-0 p-32 opacity-[0.03] pointer-events-none">
             <CalendarHeart className="w-96 h-96" />
@@ -352,50 +351,57 @@ export default function Home() {
               <p className="text-lg text-muted-foreground">Book a private tour or send a quick inquiry — pick the path that fits.</p>
             </div>
 
-            <div className="bg-card rounded-2xl shadow-2xl overflow-hidden border border-border">
-              <Tabs defaultValue="tour" className="w-full gap-0">
-                <div className="border-b border-border bg-background px-3 sm:px-4 pt-3">
-                  <TabsList className="bg-transparent h-auto p-0 gap-1 sm:gap-2 w-full justify-start rounded-none">
-                    <TabsTrigger
-                      value="tour"
-                      data-testid="tab-schedule-tour"
-                      className="data-[state=active]:bg-primary data-[state=active]:text-primary-foreground data-[state=active]:shadow-none rounded-b-none rounded-t-lg px-4 sm:px-6 py-3 text-sm sm:text-base font-medium border border-transparent data-[state=active]:border-primary"
-                    >
-                      <Clock className="w-4 h-4 mr-2" />
-                      Schedule a Tour
-                    </TabsTrigger>
-                    <TabsTrigger
-                      value="inquiry"
-                      data-testid="tab-send-inquiry"
-                      className="data-[state=active]:bg-primary data-[state=active]:text-primary-foreground data-[state=active]:shadow-none rounded-b-none rounded-t-lg px-4 sm:px-6 py-3 text-sm sm:text-base font-medium border border-transparent data-[state=active]:border-primary"
-                    >
-                      <CalendarHeart className="w-4 h-4 mr-2" />
-                      Send an Inquiry
-                    </TabsTrigger>
-                  </TabsList>
+            <div className="grid md:grid-cols-2 gap-5 md:gap-6">
+              {/* Schedule a Tour card */}
+              <a
+                href={VENUESOS_TOUR}
+                target="_blank"
+                rel="noopener noreferrer"
+                data-testid="card-schedule-tour"
+                className="group relative flex flex-col bg-card rounded-2xl shadow-lg hover:shadow-2xl border border-border hover:border-primary/40 p-8 md:p-10 transition-all duration-300 hover:-translate-y-1"
+              >
+                <div className="w-14 h-14 rounded-full bg-primary/10 flex items-center justify-center mb-6 group-hover:bg-primary group-hover:text-primary-foreground transition-colors">
+                  <Clock className="w-6 h-6 text-primary group-hover:text-primary-foreground transition-colors" />
                 </div>
-                <TabsContent value="tour" className="m-0 bg-muted/20">
-                  <iframe
-                    src={VENUESOS_TOUR}
-                    title="Schedule a Tour at Revive Event Center"
-                    className="w-full h-[750px] border-none block"
-                    loading="lazy"
-                  />
-                </TabsContent>
-                <TabsContent value="inquiry" className="m-0 bg-muted/20">
-                  <iframe
-                    src={VENUESOS_INQUIRY}
-                    title="Send an inquiry to Revive Event Center"
-                    className="w-full h-[750px] border-none block"
-                    loading="lazy"
-                  />
-                </TabsContent>
-              </Tabs>
+                <h3 className="text-2xl md:text-[26px] font-serif font-medium mb-3">Schedule a Tour</h3>
+                <p className="text-muted-foreground leading-relaxed mb-8">
+                  Pick a time that works for you and walk the ballroom in person — we'll show you the layouts, the lighting, and the kitchen.
+                </p>
+                <div className="mt-auto inline-flex items-center gap-2 text-primary font-semibold">
+                  Book a Tour <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />
+                </div>
+              </a>
+
+              {/* Send an Inquiry card */}
+              <a
+                href={VENUESOS_INQUIRY}
+                target="_blank"
+                rel="noopener noreferrer"
+                data-testid="card-send-inquiry"
+                className="group relative flex flex-col bg-card rounded-2xl shadow-lg hover:shadow-2xl border border-border hover:border-primary/40 p-8 md:p-10 transition-all duration-300 hover:-translate-y-1"
+              >
+                <div className="w-14 h-14 rounded-full bg-primary/10 flex items-center justify-center mb-6 group-hover:bg-primary group-hover:text-primary-foreground transition-colors">
+                  <CalendarHeart className="w-6 h-6 text-primary group-hover:text-primary-foreground transition-colors" />
+                </div>
+                <h3 className="text-2xl md:text-[26px] font-serif font-medium mb-3">Send an Inquiry</h3>
+                <p className="text-muted-foreground leading-relaxed mb-8">
+                  Tell us your date, guest count, and event type — we'll come back with available dates and pricing.
+                </p>
+                <div className="mt-auto inline-flex items-center gap-2 text-primary font-semibold">
+                  Start Your Inquiry <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />
+                </div>
+              </a>
             </div>
 
-            <p className="text-center text-sm text-muted-foreground mt-8">
-              Prefer to talk? Call <a href={`tel:${PHONE}`} className="text-primary font-medium hover:underline">(209) 600-1502</a> — we answer.
-            </p>
+            <div className="mt-10 flex flex-col sm:flex-row items-center justify-center gap-3 text-center">
+              <p className="text-sm text-muted-foreground">
+                Prefer to talk? Call{" "}
+                <a href={`tel:${PHONE}`} className="text-primary font-medium hover:underline">
+                  (209) 600-1502
+                </a>{" "}
+                — we answer.
+              </p>
+            </div>
           </div>
         </section>
       </main>
