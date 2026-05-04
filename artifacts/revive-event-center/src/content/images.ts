@@ -23,7 +23,7 @@ export interface GalleryItem {
 
 export const images = {
   // Real venue interior + exterior + catering
-  hero: "/revive-photos/ballroom-wide.jpg",
+  hero: "/revive-photos/setup-blush.jpg",
   ballroom: "/revive-photos/ballroom-angle.jpg",
   exterior: "/revive-photos/exterior.jpg",
   package: "/revive-photos/catering.jpg",

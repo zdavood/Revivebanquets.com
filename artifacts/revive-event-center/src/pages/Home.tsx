@@ -2,6 +2,7 @@ import { motion, type Variants } from "framer-motion";
 import { ArrowRight, CalendarHeart, PhoneCall, MapPin, Instagram, Facebook, Clock, CheckCircle2, Music, PartyPopper, Users, GlassWater, BookOpen, Star } from "lucide-react";
 import { images, recentEventsGallery } from "@/content/images";
 import { Button } from "@/components/ui/button";
+import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 
 const VENUESOS_TOUR = "https://venuesos.com/schedule-tour";
 const VENUESOS_INQUIRY = "https://venuesos.com/inquiry";
@@ -34,13 +35,16 @@ export default function Home() {
           <a href="#" data-testid="link-home-logo" className="font-serif text-2xl md:text-3xl font-bold text-primary tracking-wide">
             REVIVE <span className="font-light text-foreground text-xl md:text-2xl">EVENT CENTER</span>
           </a>
-          <nav className="hidden md:flex items-center gap-8 text-sm font-medium">
+          <nav className="hidden md:flex items-center gap-6 lg:gap-8 text-sm font-medium">
+            <a href="#venue" className="hidden lg:inline-block hover:text-primary transition-colors">The Venue</a>
+            <a href="#celebrations" className="hidden lg:inline-block hover:text-primary transition-colors">Celebrations</a>
+            <a href="#gallery" className="hidden lg:inline-block hover:text-primary transition-colors">Gallery</a>
             <a href="tel:2096001502" data-testid="link-nav-phone" className="flex items-center gap-2 hover:text-primary transition-colors">
               <PhoneCall className="w-4 h-4 text-primary" /> {PHONE_DISPLAY}
             </a>
             <Button asChild size="lg" className="bg-primary text-primary-foreground hover:bg-primary/90 font-semibold shadow-sm">
-              <a href={VENUESOS_TOUR} target="_blank" rel="noopener noreferrer" data-testid="link-nav-tour">
-                Schedule a Tour
+              <a href="#book" data-testid="link-nav-tour">
+                Book Now
               </a>
             </Button>
           </nav>
@@ -52,10 +56,10 @@ export default function Home() {
         <section className="relative min-h-[90vh] md:min-h-[95vh] pt-20 flex items-center justify-center overflow-hidden">
           {/* Background Image & Overlay */}
           <div className="absolute inset-0 z-0">
-            <div className="absolute inset-0 bg-gradient-to-b from-foreground/40 via-foreground/30 to-background z-10" />
+            <div className="absolute inset-0 bg-gradient-to-b from-black/65 via-black/45 to-background z-10" />
             <img 
               src={images.hero} 
-              alt="Wide interior view of the Revive Event Center ballroom with chandeliers, round tables, and ceremony staging" 
+              alt="Blush and ivory wedding reception styled inside the Revive Event Center ballroom" 
               className="w-full h-full object-cover object-center"
             />
           </div>
@@ -118,45 +122,8 @@ export default function Home() {
           </div>
         </section>
 
-        {/* SOCIAL PROOF & PACKAGE TEASER */}
-        <section className="py-16 md:py-24 bg-card border-y border-border">
-          <div className="max-w-7xl mx-auto px-6">
-            <div className="grid lg:grid-cols-2 gap-16 items-center">
-              <motion.div initial="hidden" whileInView="visible" viewport={{ once: true, margin: "-100px" }} variants={staggerContainer} className="space-y-8">
-                <motion.h2 variants={fadeInUp} className="text-3xl md:text-4xl font-serif font-medium">
-                  Now Booking 2026 Events
-                </motion.h2>
-                <motion.p variants={fadeInUp} className="text-lg text-muted-foreground">
-                  Secure your date at Merced's newest upscale venue. We bring the polish of a hotel banquet floor paired with the warmth of a family-run space.
-                </motion.p>
-                <motion.div variants={fadeInUp} className="bg-primary/5 border border-primary/20 p-6 md:p-8 rounded-2xl relative overflow-hidden">
-                  <div className="absolute top-0 right-0 p-4 opacity-10">
-                    <BookOpen className="w-24 h-24 text-primary" />
-                  </div>
-                  <h3 className="text-xl font-medium text-foreground mb-3 relative z-10">All-Inclusive Packages Available</h3>
-                  <p className="text-muted-foreground relative z-10 mb-6">
-                    Ask about our all-inclusive per-person packages including venue, catering, service charge, and tax.
-                  </p>
-                  <Button asChild variant="default" className="bg-foreground text-background hover:bg-foreground/90 relative z-10">
-                    <a href={VENUESOS_TOUR} target="_blank" rel="noopener noreferrer">
-                      Schedule a Tour to Learn More
-                    </a>
-                  </Button>
-                </motion.div>
-              </motion.div>
-              
-              <motion.div initial="hidden" whileInView="visible" viewport={{ once: true, margin: "-100px" }} variants={fadeInUp} className="relative h-[400px] md:h-[500px] rounded-2xl overflow-hidden shadow-2xl">
-                <img src={images.package} alt="Artisan grazing table with charcuterie, fruit, cheese and olives at Revive Event Center" className="w-full h-full object-cover" />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/10 to-transparent flex items-end p-8">
-                  <p className="text-white font-medium text-lg italic">"Bring your guests to life with events that revive."</p>
-                </div>
-              </motion.div>
-            </div>
-          </div>
-        </section>
-
         {/* WHY REVIVE (FEATURES) */}
-        <section className="py-24 md:py-32 bg-background">
+        <section id="venue" className="py-24 md:py-32 bg-background scroll-mt-20">
           <div className="max-w-7xl mx-auto px-6">
             <div className="text-center max-w-3xl mx-auto mb-16">
               <h2 className="text-4xl md:text-5xl font-serif font-medium mb-6">The Revive Standard</h2>
@@ -193,7 +160,7 @@ export default function Home() {
         </section>
 
         {/* EVENT TYPES */}
-        <section className="py-24 md:py-32 bg-card border-y border-border">
+        <section id="celebrations" className="py-24 md:py-32 bg-card border-y border-border scroll-mt-20">
           <div className="max-w-7xl mx-auto px-6">
             <div className="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-6">
               <div className="max-w-2xl">
@@ -238,7 +205,7 @@ export default function Home() {
         </section>
 
         {/* RECENT EVENTS GALLERY */}
-        <section className="py-24 md:py-32 bg-background">
+        <section id="gallery" className="py-24 md:py-32 bg-background scroll-mt-20">
           <div className="max-w-7xl mx-auto px-6">
             <div className="text-center mb-16">
               <h2 className="text-4xl md:text-5xl font-serif font-medium mb-6">Recent Events & Inspiration</h2>
@@ -284,47 +251,137 @@ export default function Home() {
           </div>
         </section>
 
-        {/* BOOKING / IFRAME SECTION */}
-        <section className="py-24 md:py-32 bg-primary/5 border-t border-border relative overflow-hidden" id="book">
+        {/* NOW BOOKING 2026 — URGENCY ANCHOR */}
+        <section className="py-20 md:py-28 bg-card border-y border-border">
+          <div className="max-w-7xl mx-auto px-6">
+            <div className="grid lg:grid-cols-5 gap-12 lg:gap-16 items-center">
+              <motion.div initial="hidden" whileInView="visible" viewport={{ once: true, margin: "-100px" }} variants={staggerContainer} className="lg:col-span-3 space-y-6">
+                <motion.div variants={fadeInUp} className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary/10 text-primary text-xs font-semibold uppercase tracking-wider">
+                  <CalendarHeart className="w-3.5 h-3.5" /> Now Booking 2026
+                </motion.div>
+                <motion.h2 variants={fadeInUp} className="text-3xl md:text-4xl lg:text-5xl font-serif font-medium leading-tight">
+                  Reserve your date at Merced's newest upscale venue.
+                </motion.h2>
+                <motion.p variants={fadeInUp} className="text-lg text-muted-foreground leading-relaxed">
+                  Saturdays in peak season fill first. Lock in your 2026 date now and ask about our all-inclusive per-person packages — venue, catering, service charge, and tax in one transparent number.
+                </motion.p>
+                <motion.div variants={fadeInUp} className="flex flex-col sm:flex-row gap-4 pt-2">
+                  <Button asChild size="lg" className="bg-primary text-primary-foreground hover:bg-primary/90 h-14 px-8 shadow-lg shadow-primary/20">
+                    <a href="#book">
+                      Check Date Availability <ArrowRight className="ml-2 w-4 h-4" />
+                    </a>
+                  </Button>
+                  <Button asChild variant="outline" size="lg" className="h-14 px-8">
+                    <a href={`tel:${PHONE}`}>
+                      <PhoneCall className="mr-2 w-4 h-4" /> Call (209) 600-1502
+                    </a>
+                  </Button>
+                </motion.div>
+              </motion.div>
+
+              <motion.div initial="hidden" whileInView="visible" viewport={{ once: true, margin: "-100px" }} variants={fadeInUp} className="lg:col-span-2 relative aspect-[4/5] lg:aspect-auto lg:h-[480px] rounded-2xl overflow-hidden shadow-2xl">
+                <img src={images.package} alt="Artisan grazing table with charcuterie, fruit, cheese and olives at Revive Event Center" className="w-full h-full object-cover" />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/75 via-black/10 to-transparent flex items-end p-8">
+                  <p className="text-white font-serif italic text-lg leading-snug">"Bring your guests to life with events that revive."</p>
+                </div>
+              </motion.div>
+            </div>
+          </div>
+        </section>
+
+        {/* HOW IT WORKS — 3 STEPS */}
+        <section className="py-24 md:py-32 bg-background">
+          <div className="max-w-7xl mx-auto px-6">
+            <div className="text-center max-w-3xl mx-auto mb-16">
+              <span className="text-primary text-sm font-semibold uppercase tracking-[0.2em]">How It Works</span>
+              <h2 className="text-4xl md:text-5xl font-serif font-medium mt-4 mb-6">A simple path to your event.</h2>
+              <p className="text-lg text-muted-foreground">From first hello to last dance — three transparent steps, zero pressure.</p>
+            </div>
+
+            <div className="grid md:grid-cols-3 gap-10 lg:gap-16 max-w-6xl mx-auto">
+              {[
+                { num: "01", title: "Schedule a Tour", desc: "Walk the ballroom in person, see the lighting, and ask every question. Tours are by appointment so you have our undivided attention.", icon: Clock },
+                { num: "02", title: "Tailor Your Package", desc: "Pick an all-inclusive package or customize venue, catering, and bar to your vision. We send a clear, itemized proposal — no surprises.", icon: BookOpen },
+                { num: "03", title: "Celebrate", desc: "Show up and be present. Our team handles setup, service, and breakdown so you can enjoy the night your guests will remember.", icon: PartyPopper },
+              ].map((step, i) => (
+                <motion.div
+                  key={step.num}
+                  initial={{ opacity: 0, y: 30 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ delay: i * 0.15, duration: 0.5 }}
+                  className="relative"
+                >
+                  <div className="text-7xl md:text-8xl font-serif font-light text-primary/25 leading-none mb-4 select-none">{step.num}</div>
+                  <div className="flex items-center gap-3 mb-4">
+                    <div className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center shrink-0">
+                      <step.icon className="w-5 h-5 text-primary" />
+                    </div>
+                    <h3 className="text-xl md:text-2xl font-medium">{step.title}</h3>
+                  </div>
+                  <p className="text-muted-foreground leading-relaxed">{step.desc}</p>
+                </motion.div>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        {/* BOOKING / TABBED IFRAME SECTION */}
+        <section id="book" className="py-24 md:py-32 bg-primary/5 border-t border-border relative overflow-hidden scroll-mt-20">
           <div className="absolute top-0 right-0 p-32 opacity-[0.03] pointer-events-none">
             <CalendarHeart className="w-96 h-96" />
           </div>
-          
-          <div className="max-w-7xl mx-auto px-6 relative z-10">
-            <div className="text-center max-w-3xl mx-auto mb-16">
+
+          <div className="max-w-5xl mx-auto px-6 relative z-10">
+            <div className="text-center max-w-3xl mx-auto mb-12">
               <h2 className="text-4xl md:text-5xl font-serif font-medium mb-6">Ready to Revive Your Event?</h2>
-              <p className="text-lg text-muted-foreground">Book a private tour to see the space in person, or send us an inquiry with your event details.</p>
+              <p className="text-lg text-muted-foreground">Book a private tour or send a quick inquiry — pick the path that fits.</p>
             </div>
 
-            <div className="grid lg:grid-cols-2 gap-8 lg:gap-12">
-              <div className="bg-card rounded-2xl shadow-xl overflow-hidden border border-border flex flex-col">
-                <div className="p-6 border-b border-border bg-background">
-                  <h3 className="text-2xl font-serif font-medium text-foreground">Schedule a Tour</h3>
+            <div className="bg-card rounded-2xl shadow-2xl overflow-hidden border border-border">
+              <Tabs defaultValue="tour" className="w-full gap-0">
+                <div className="border-b border-border bg-background px-3 sm:px-4 pt-3">
+                  <TabsList className="bg-transparent h-auto p-0 gap-1 sm:gap-2 w-full justify-start rounded-none">
+                    <TabsTrigger
+                      value="tour"
+                      data-testid="tab-schedule-tour"
+                      className="data-[state=active]:bg-primary data-[state=active]:text-primary-foreground data-[state=active]:shadow-none rounded-b-none rounded-t-lg px-4 sm:px-6 py-3 text-sm sm:text-base font-medium border border-transparent data-[state=active]:border-primary"
+                    >
+                      <Clock className="w-4 h-4 mr-2" />
+                      Schedule a Tour
+                    </TabsTrigger>
+                    <TabsTrigger
+                      value="inquiry"
+                      data-testid="tab-send-inquiry"
+                      className="data-[state=active]:bg-primary data-[state=active]:text-primary-foreground data-[state=active]:shadow-none rounded-b-none rounded-t-lg px-4 sm:px-6 py-3 text-sm sm:text-base font-medium border border-transparent data-[state=active]:border-primary"
+                    >
+                      <CalendarHeart className="w-4 h-4 mr-2" />
+                      Send an Inquiry
+                    </TabsTrigger>
+                  </TabsList>
                 </div>
-                <div className="flex-1 bg-muted/20">
-                  <iframe 
-                    src={VENUESOS_TOUR} 
-                    title="Schedule a Tour"
-                    className="w-full h-[750px] border-none"
+                <TabsContent value="tour" className="m-0 bg-muted/20">
+                  <iframe
+                    src={VENUESOS_TOUR}
+                    title="Schedule a Tour at Revive Event Center"
+                    className="w-full h-[750px] border-none block"
                     loading="lazy"
                   />
-                </div>
-              </div>
-
-              <div className="bg-card rounded-2xl shadow-xl overflow-hidden border border-border flex flex-col">
-                <div className="p-6 border-b border-border bg-background">
-                  <h3 className="text-2xl font-serif font-medium text-foreground">Contact Us</h3>
-                </div>
-                <div className="flex-1 bg-muted/20">
-                  <iframe 
-                    src={VENUESOS_INQUIRY} 
-                    title="Contact Us"
-                    className="w-full h-[700px] border-none"
+                </TabsContent>
+                <TabsContent value="inquiry" className="m-0 bg-muted/20">
+                  <iframe
+                    src={VENUESOS_INQUIRY}
+                    title="Send an inquiry to Revive Event Center"
+                    className="w-full h-[750px] border-none block"
                     loading="lazy"
                   />
-                </div>
-              </div>
+                </TabsContent>
+              </Tabs>
             </div>
+
+            <p className="text-center text-sm text-muted-foreground mt-8">
+              Prefer to talk? Call <a href={`tel:${PHONE}`} className="text-primary font-medium hover:underline">(209) 600-1502</a> — we answer.
+            </p>
           </div>
         </section>
       </main>
