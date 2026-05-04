@@ -91,12 +91,6 @@ export default function Home() {
                     Send an Inquiry
                   </a>
                 </Button>
-                <Button asChild variant="ghost" size="lg" className="w-full sm:w-auto text-base h-14 px-6 hover:bg-background/60 hover:text-primary transition-all">
-                  <a href={`tel:${PHONE}`}>
-                    <PhoneCall className="mr-2 w-4 h-4" />
-                    Call Now
-                  </a>
-                </Button>
               </motion.div>
             </motion.div>
           </div>
@@ -293,8 +287,8 @@ export default function Home() {
                     </a>
                   </Button>
                   <Button asChild variant="outline" size="lg" className="h-14 px-8">
-                    <a href={`tel:${PHONE}`}>
-                      <PhoneCall className="mr-2 w-4 h-4" /> Call (209) 600-1502
+                    <a href={VENUESOS_INQUIRY} target="_blank" rel="noopener noreferrer">
+                      Send an Inquiry
                     </a>
                   </Button>
                 </motion.div>
@@ -357,7 +351,7 @@ export default function Home() {
             <div className="text-center max-w-3xl mx-auto mb-12">
               <h2 className="text-4xl md:text-5xl font-serif font-medium mb-6">Ready to Revive Your Event?</h2>
               <p className="text-lg text-muted-foreground">Book a private tour or send a quick inquiry — pick the path that fits.</p>
-              <p className="mt-4 text-sm md:text-[15px] font-medium text-primary">
+              <p className="mt-4 text-sm md:text-[15px] text-muted-foreground">
                 Takes 30 seconds. No commitment. Lock in your date before it's gone.
               </p>
             </div>
