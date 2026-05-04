@@ -1,0 +1,54 @@
+Yes — it’s solid, but I’d tighten it so Replit doesn’t overbuild or waste time.
+
+Main suggestions:
+
+Do not tell it to “pull stock images” unless you trust it
+Better wording: use royalty-free image URLs/placeholders and clearly mark where real photos go. Otherwise it may waste time hunting images or create licensing issues.
+Make the main CTA obvious
+Top hero should have:
+Schedule a Tour
+Get Pricing / Contact Us
+Call Now
+Add “Why Revive” section
+This is where you sell:
+350 seated capacity
+Elegant ballroom
+Central Merced location
+Tables/chairs included
+Packages available
+Kitchen/bar access
+Weddings, quinceañeras, corporate, concerts, memorials
+Add social proof placeholders
+Even if you don’t have reviews yet:
+“Grand Opening Venue”
+“Now booking 2026 events”
+“Private tours available”
+“Designed for weddings, quinceañeras, corporate events, and milestone celebrations”
+Add package teaser without exact pricing
+Say:
+“Ask about our all-inclusive per-person packages including venue, catering, service charge, and tax.”
+Don’t put hard pricing unless you want customers anchoring you low.
+Add sticky mobile CTA
+On phones, bottom sticky bar:
+Call
+Tour
+Contact
+
+That will convert better than just pretty design.
+
+Tell it no fake backend, no broken forms
+Since the real forms are iframes, it should not create fake contact forms that do nothing.
+
+I’d add this section to your prompt:
+
+Conversion requirements:
+- The hero must immediately communicate that Revive Event Center is an upscale event venue in Merced, CA for weddings, quinceañeras, corporate events, concerts, and milestone celebrations.
+- Above the fold must include three clear CTAs: Schedule a Tour, Contact Us, and Call Now.
+- Add a sticky mobile CTA bar with Call, Schedule Tour, and Contact.
+- Do not create fake forms. All tour/contact actions must use the provided venuesos.com links or embedded iframes.
+- Include a “Why Revive” section highlighting elegant ballroom, 350 seated capacity, central Merced location, tables/chairs included, kitchen/bar access, and all-inclusive package availability.
+- Include a “Now Booking 2026 Events” or “Grand Opening Booking” section, but do not show hard package prices unless specifically provided.
+- Use royalty-free placeholder imagery only, with a clearly marked folder/array where real Revive photos can replace them later.
+- No emojis anywhere.
+
+Overall: good direction. Biggest thing is don’t let it make a pretty art project. Make it a sales page that pushes tours and inquiries.
