@@ -18,7 +18,7 @@ export interface GalleryItem {
 }
 
 export const images = {
-  hero: "/revive-photos/hero.jpg",
+  hero: "https://images.unsplash.com/photo-1698934641149-93431f3bd4f7?fm=jpg&q=80&w=2400&auto=format&fit=crop",
   ballroom: "/revive-photos/ballroom.jpg",
   exterior: "/revive-photos/exterior.jpg",
   weddings: "/revive-photos/wedding.jpg",

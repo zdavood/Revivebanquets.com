@@ -52,11 +52,11 @@ export default function Home() {
         <section className="relative min-h-[90vh] md:min-h-[95vh] pt-20 flex items-center justify-center overflow-hidden">
           {/* Background Image & Overlay */}
           <div className="absolute inset-0 z-0">
-            <div className="absolute inset-0 bg-gradient-to-b from-background/30 via-background/60 to-background z-10" />
+            <div className="absolute inset-0 bg-gradient-to-b from-foreground/40 via-foreground/30 to-background z-10" />
             <img 
               src={images.hero} 
-              alt="Revive Event Center elegant ballroom" 
-              className="w-full h-full object-cover object-center scale-105 motion-safe:animate-[pulse_10s_ease-in-out_infinite_alternate]"
+              alt="Wide interior view of the Revive Event Center ballroom with chandeliers, round tables, and ceremony staging" 
+              className="w-full h-full object-cover object-center"
             />
           </div>
           
@@ -66,12 +66,12 @@ export default function Home() {
                 <Star className="w-4 h-4 fill-primary/20" /> Grand Opening Venue
               </motion.div>
               
-              <motion.h1 variants={fadeInUp} className="text-5xl md:text-7xl lg:text-8xl font-serif font-medium tracking-tight text-foreground leading-[1.1]">
-                Events That <span className="text-primary italic pr-2">Revive</span>
+              <motion.h1 variants={fadeInUp} className="text-5xl md:text-7xl lg:text-8xl font-serif font-medium tracking-tight text-white leading-[1.1] [text-shadow:0_2px_30px_rgba(0,0,0,0.4)]">
+                Merced's Premier <span className="text-primary italic pr-2">Event Venue</span>
               </motion.h1>
               
-              <motion.p variants={fadeInUp} className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto font-light leading-relaxed">
-                Central Merced's premier upscale destination for weddings, quinceañeras, corporate galas, concerts, and milestone celebrations. Step into the golden-lit elegance of a freshly renovated ballroom.
+              <motion.p variants={fadeInUp} className="text-lg md:text-xl text-white/90 max-w-2xl mx-auto font-light leading-relaxed [text-shadow:0_1px_20px_rgba(0,0,0,0.5)]">
+                Weddings, Quinceañeras, Corporate Events, Concerts &amp; More
               </motion.p>
               
               <motion.div variants={fadeInUp} className="flex flex-col sm:flex-row items-center justify-center gap-4 pt-8 w-full max-w-md mx-auto sm:max-w-none">
@@ -93,6 +93,28 @@ export default function Home() {
                 </Button>
               </motion.div>
             </motion.div>
+          </div>
+        </section>
+
+        {/* CREDIBILITY STRIP */}
+        <section className="bg-card border-y border-border">
+          <div className="max-w-7xl mx-auto px-6 py-6 md:py-8">
+            <ul className="grid grid-cols-2 md:grid-cols-5 gap-x-6 gap-y-4 text-center">
+              {[
+                { label: "350 Guest Capacity", icon: Users },
+                { label: "Central Merced Location", icon: MapPin },
+                { label: "Tables & Chairs Included", icon: CheckCircle2 },
+                { label: "Kitchen & Bar Access", icon: GlassWater },
+                { label: "All-Inclusive Packages Available", icon: Star },
+              ].map(({ label, icon: Icon }) => (
+                <li key={label} className="flex flex-col items-center justify-center gap-2">
+                  <Icon className="w-5 h-5 text-primary" />
+                  <span className="text-sm md:text-[15px] font-medium text-foreground leading-snug">
+                    {label}
+                  </span>
+                </li>
+              ))}
+            </ul>
           </div>
         </section>
 
