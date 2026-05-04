@@ -41,8 +41,8 @@ export default function Home() {
               <PhoneCall className="w-4 h-4 text-primary" /> {PHONE_DISPLAY}
             </a>
             <Button asChild size="lg" className="bg-primary text-primary-foreground hover:bg-primary/90 font-semibold shadow-sm">
-              <a href="#book" data-testid="link-nav-tour">
-                Book Now
+              <a href={VENUESOS_TOUR} target="_blank" rel="noopener noreferrer" data-testid="link-nav-tour">
+                Schedule a Tour
               </a>
             </Button>
           </nav>
@@ -68,6 +68,14 @@ export default function Home() {
                 Merced's Premier <span className="text-primary italic pr-2">Event Venue</span>
               </motion.h1>
               
+              <motion.div variants={fadeInUp} className="flex items-center justify-center gap-3 md:gap-4 text-sm md:text-base text-white/85 font-medium tracking-wide flex-wrap [text-shadow:0_1px_20px_rgba(0,0,0,0.5)]">
+                <span>Up to 350 guests</span>
+                <span className="text-primary" aria-hidden="true">·</span>
+                <span>Flexible layouts</span>
+                <span className="text-primary" aria-hidden="true">·</span>
+                <span>Now booking 2026</span>
+              </motion.div>
+
               <motion.p variants={fadeInUp} className="text-lg md:text-xl text-white/90 max-w-2xl mx-auto font-light leading-relaxed [text-shadow:0_1px_20px_rgba(0,0,0,0.5)]">
                 Weddings, Quinceañeras, Corporate Events, Concerts &amp; More
               </motion.p>
@@ -80,7 +88,7 @@ export default function Home() {
                 </Button>
                 <Button asChild variant="outline" size="lg" className="w-full sm:w-auto text-base h-14 px-8 border-border bg-background/50 backdrop-blur-sm hover:bg-background/80 hover:text-primary transition-all">
                   <a href={VENUESOS_INQUIRY} target="_blank" rel="noopener noreferrer">
-                    Contact Us
+                    Send an Inquiry
                   </a>
                 </Button>
                 <Button asChild variant="ghost" size="lg" className="w-full sm:w-auto text-base h-14 px-6 hover:bg-background/60 hover:text-primary transition-all">
@@ -103,7 +111,7 @@ export default function Home() {
                 { label: "Central Merced Location", icon: MapPin },
                 { label: "Tables & Chairs Included", icon: CheckCircle2 },
                 { label: "Kitchen & Bar Access", icon: GlassWater },
-                { label: "All-Inclusive Packages Available", icon: Star },
+                { label: "All-inclusive pricing — one number, no surprises", icon: Star },
               ].map(({ label, icon: Icon }) => (
                 <li key={label} className="flex flex-col items-center justify-center gap-2">
                   <Icon className="w-5 h-5 text-primary" />
@@ -180,12 +188,12 @@ export default function Home() {
               </p>
               <div className="flex flex-col sm:flex-row gap-4 pt-2">
                 <Button asChild size="lg" className="bg-primary text-primary-foreground hover:bg-primary/90 h-14 px-8 shadow-lg">
-                  <a href="#book">
-                    Book a Walkthrough <ArrowRight className="ml-2 w-4 h-4" />
+                  <a href={VENUESOS_TOUR} target="_blank" rel="noopener noreferrer">
+                    Schedule a Tour <ArrowRight className="ml-2 w-4 h-4" />
                   </a>
                 </Button>
                 <Button asChild variant="outline" size="lg" className="h-14 px-8 bg-background/10 border-white/40 text-white hover:bg-background/20 hover:text-white backdrop-blur-sm">
-                  <a href="#celebrations">Explore Celebrations</a>
+                  <a href={VENUESOS_INQUIRY} target="_blank" rel="noopener noreferrer">Send an Inquiry</a>
                 </Button>
               </div>
             </motion.div>
@@ -201,7 +209,7 @@ export default function Home() {
                 <p className="text-lg text-muted-foreground">From the most sacred vows to the wildest corporate galas, our space transforms to fit your vision.</p>
               </div>
               <Button asChild variant="outline" className="shrink-0 hidden md:flex">
-                <a href={VENUESOS_INQUIRY} target="_blank" rel="noopener noreferrer">Inquire About Your Event</a>
+                <a href={VENUESOS_INQUIRY} target="_blank" rel="noopener noreferrer">Send an Inquiry</a>
               </Button>
             </div>
 
@@ -280,8 +288,8 @@ export default function Home() {
                 </motion.p>
                 <motion.div variants={fadeInUp} className="flex flex-col sm:flex-row gap-4 pt-2">
                   <Button asChild size="lg" className="bg-primary text-primary-foreground hover:bg-primary/90 h-14 px-8 shadow-lg shadow-primary/20">
-                    <a href="#book">
-                      Check Date Availability <ArrowRight className="ml-2 w-4 h-4" />
+                    <a href={VENUESOS_TOUR} target="_blank" rel="noopener noreferrer">
+                      Schedule a Tour <ArrowRight className="ml-2 w-4 h-4" />
                     </a>
                   </Button>
                   <Button asChild variant="outline" size="lg" className="h-14 px-8">
@@ -349,6 +357,9 @@ export default function Home() {
             <div className="text-center max-w-3xl mx-auto mb-12">
               <h2 className="text-4xl md:text-5xl font-serif font-medium mb-6">Ready to Revive Your Event?</h2>
               <p className="text-lg text-muted-foreground">Book a private tour or send a quick inquiry — pick the path that fits.</p>
+              <p className="mt-4 text-sm md:text-[15px] font-medium text-primary">
+                Takes 30 seconds. No commitment. Lock in your date before it's gone.
+              </p>
             </div>
 
             <div className="grid md:grid-cols-2 gap-5 md:gap-6">
@@ -368,7 +379,7 @@ export default function Home() {
                   Pick a time that works for you and walk the ballroom in person — we'll show you the layouts, the lighting, and the kitchen.
                 </p>
                 <div className="mt-auto inline-flex items-center gap-2 text-primary font-semibold">
-                  Book a Tour <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />
+                  Schedule a Tour <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />
                 </div>
               </a>
 
@@ -388,7 +399,7 @@ export default function Home() {
                   Tell us your date, guest count, and event type — we'll come back with available dates and pricing.
                 </p>
                 <div className="mt-auto inline-flex items-center gap-2 text-primary font-semibold">
-                  Start Your Inquiry <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />
+                  Send an Inquiry <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />
                 </div>
               </a>
             </div>
@@ -453,7 +464,7 @@ export default function Home() {
               <h4 className="font-medium text-lg">Quick Links</h4>
               <div className="space-y-2 flex flex-col">
                 <a href={VENUESOS_TOUR} target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors">Schedule a Tour</a>
-                <a href={VENUESOS_INQUIRY} target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors">Inquire Now</a>
+                <a href={VENUESOS_INQUIRY} target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors">Send an Inquiry</a>
                 <a href="#" className="text-muted-foreground hover:text-primary transition-colors">Back to Top</a>
               </div>
             </div>
@@ -474,11 +485,11 @@ export default function Home() {
         </a>
         <a href={VENUESOS_TOUR} target="_blank" rel="noopener noreferrer" className="flex-1 flex flex-col items-center justify-center py-3 px-2 text-xs font-medium bg-primary text-primary-foreground hover:bg-primary/90 transition-colors border-r border-primary/20">
           <Clock className="w-5 h-5 mb-1" />
-          Schedule Tour
+          Schedule a Tour
         </a>
         <a href={VENUESOS_INQUIRY} target="_blank" rel="noopener noreferrer" className="flex-1 flex flex-col items-center justify-center py-3 px-2 text-xs font-medium text-foreground hover:bg-muted transition-colors">
           <CalendarHeart className="w-5 h-5 mb-1" />
-          Contact Us
+          Send an Inquiry
         </a>
       </div>
     </div>
