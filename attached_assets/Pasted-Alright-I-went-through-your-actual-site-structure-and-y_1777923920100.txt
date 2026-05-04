@@ -1,0 +1,296 @@
+Alright — I went through your actual site structure and your screenshots. I don’t need fluff here, so I’m going to give you a real audit like someone trying to break your funnel.
+
+Also keep in mind: tools like Replit are known to misinterpret intent and introduce inconsistencies if not tightly controlled, especially on UI/UX flows — and your site shows that exact pattern.
+
+🔍 FULL SITE AUDIT (REAL ISSUES)
+1. 🚨 Your site is trying to do TOO MUCH at once
+
+You’ve got:
+
+Luxury branding
+Operational venue selling
+Event inspiration gallery
+Booking funnel
+Sales page
+Informational page
+
+👉 That creates friction.
+
+User problem:
+
+“What am I supposed to do here?”
+
+Fix:
+Pick ONE primary goal:
+👉 Book a tour
+
+Everything else should support that.
+
+2. ❌ Your hero section is still weak (even after fixes)
+What it does now:
+Looks nice
+Has CTAs
+Has tagline
+What it does NOT do:
+Instantly communicate:
+capacity
+pricing range (even hinted)
+ease of booking
+
+👉 People don’t feel urgency.
+
+Fix:
+
+Add ONE hard line:
+
+“Up to 350 guests. Flexible layouts. Now booking 2026.”
+
+Right under headline.
+
+3. ⚠️ CTA inconsistency (this is hurting conversion)
+
+You’re using:
+
+Schedule a Tour
+Contact Us
+Book Now
+Inquire
+Check Availability
+
+👉 That’s too many paths.
+
+User confusion = lower conversion
+
+Fix:
+
+Standardize to 2:
+
+Schedule a Tour (primary)
+Check Availability (secondary)
+
+Kill everything else.
+
+4. ❌ The event section (big issue)
+
+You already saw this but here’s the deeper problem:
+
+What it's doing:
+Showing variety
+What it's NOT doing:
+Showing control
+
+👉 It looks like:
+
+“We can do anything”
+
+Instead of:
+
+“We handle events professionally”
+
+Bigger issue:
+
+Images are inconsistent in:
+
+lighting
+color tone
+quality
+style
+
+That breaks perceived quality.
+
+Fix:
+Pick 4 categories max
+Normalize image style
+Same lighting tone across all
+5. 🚨 Your strongest asset is UNDERUSED
+
+This image you showed me:
+👉 HUGE advantage
+
+But your site:
+
+doesn’t emphasize scale enough
+doesn’t show transformation clearly
+Fix:
+
+Add:
+
+“Same room → 4 different setups”
+
+Before/after style section.
+
+That sells HARD.
+
+6. ❌ Too much repeated language
+
+You repeat:
+
+“elegant”
+“ballroom”
+“all-inclusive”
+“celebration”
+
+👉 Feels generic after a few scrolls.
+
+Fix:
+
+Replace with functional language:
+
+layout
+flow
+capacity
+setup
+execution
+7. ⚠️ “All-inclusive packages” is weakly positioned
+
+Right now:
+
+“Ask about packages”
+
+That’s passive.
+
+Fix:
+
+Make it more aggressive:
+
+“All-inclusive pricing available — one number, no surprises.”
+
+8. ❌ Missing TRUST layer
+
+This is one of your biggest gaps.
+
+You have:
+
+no testimonials
+no logos
+no stats
+no “events hosted”
+
+👉 That creates doubt.
+
+Fix (even if you don’t have reviews yet):
+
+Add:
+
+“Now booking 2026”
+“Private tours available”
+“Designed for high-capacity events”
+
+Even basic authority helps.
+
+9. 🚨 Booking friction still exists
+
+Even with iframes:
+
+Problems:
+It feels like a separate system
+No lead-in before form
+No reassurance
+Fix:
+
+Before the iframe:
+
+“Takes 30 seconds. No commitment. Lock in your date before it’s gone.”
+
+10. ⚠️ Tone inconsistency (big subtle issue)
+
+Your tone shifts between:
+
+luxury wedding
+operational venue
+corporate event hall
+
+👉 That confuses positioning.
+
+Fix:
+
+Pick tone:
+👉 “Premium but practical”
+
+Not:
+👉 “romantic luxury”
+
+11. ❌ Mobile conversion likely underperforming
+
+Based on structure:
+
+too much scroll before action
+too many sections
+no sticky CTA (you NEED this)
+Fix:
+
+Add bottom mobile bar:
+
+Call
+Tour
+Availability
+12. ⚠️ Visual hierarchy is flat in mid-page
+
+Everything is:
+
+same weight
+same size
+same importance
+
+👉 Nothing stands out.
+
+Fix:
+
+You need:
+
+1 dominant section per screen
+then break
+then next focus
+🧠 BIG PICTURE PROBLEM
+
+Right now your site is:
+
+“A well-built venue website”
+
+It needs to be:
+
+“A conversion funnel disguised as a venue website”
+
+🔥 PRIORITY FIX ORDER (DO THIS IN ORDER)
+1. Fix CTAs (highest impact)
+
+Standardize to 2 buttons everywhere
+
+2. Fix hero messaging
+
+Add capacity + urgency
+
+3. Clean event section
+
+Reduce to 4 categories
+
+4. Add scale / transformation section
+
+This is your strongest selling point
+
+5. Add trust layer
+
+Even basic
+
+6. Add mobile sticky CTA
+
+This will directly increase leads
+
+💬 Final honest take
+
+You are WAY ahead of most venue sites already.
+
+But right now:
+
+It’s polished
+It’s clean
+It’s impressive
+
+👉 It’s just not fully optimized to close the deal
+
+If you want, next step I can:
+
+Rewrite the entire page as a conversion funnel
+Or give you a Replit prompt that fixes ALL of this in one pass
+
+That’ll take this from “nice” → “this thing prints bookings.”
