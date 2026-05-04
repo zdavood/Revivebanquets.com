@@ -1,0 +1,31 @@
+kind = "web"
+previewPath = "/"
+title = "Revive Event Center"
+version = "1.0.0"
+id = "artifacts/revive-event-center"
+router = "path"
+
+[[integratedSkills]]
+name = "react-vite"
+version = "1.0.0"
+
+[[services]]
+name = "web"
+paths = [ "/" ]
+localPort = 22615
+
+[services.development]
+run = "pnpm --filter @workspace/revive-event-center run dev"
+
+[services.production]
+build = [ "pnpm", "--filter", "@workspace/revive-event-center", "run", "build" ]
+publicDir = "artifacts/revive-event-center/dist/public"
+serve = "static"
+
+[[services.production.rewrites]]
+from = "/*"
+to = "/index.html"
+
+[services.env]
+PORT = "22615"
+BASE_PATH = "/"

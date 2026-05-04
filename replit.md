@@ -25,3 +25,9 @@ pnpm workspace monorepo using TypeScript. Each package manages its own dependenc
 - `pnpm --filter @workspace/api-server run dev` — run API server locally
 
 See the `pnpm-workspace` skill for workspace structure, TypeScript setup, and package details.
+
+## Artifacts
+
+- **API Server** (`artifacts/api-server`) — Express API at `/api`.
+- **Canvas / Mockup Sandbox** (`artifacts/mockup-sandbox`) — component preview sandbox.
+- **Revive Event Center** (`artifacts/revive-event-center`) — single-page React + Vite marketing site at `/` for Revive Banquet Hall in Merced, CA. Frontend-only (no backend, no API). All photo URLs are centralized in `src/content/images.ts`; the user swaps in real photos by dropping files into `public/revive-photos/` and editing that one file. Tour and inquiry forms are embedded as iframes from venuesos.com — no custom forms exist.

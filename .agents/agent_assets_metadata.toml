@@ -1,0 +1,86 @@
+uploads = []
+generated = []
+
+[[outputs]]
+id = "R7z0NWZQ384xy7BuQghWe"
+uri = "file://artifacts/revive-event-center/public/revive-photos/hero.jpg"
+type = "image"
+title = "luxury ballroom interior golden hour lighting"
+
+[[outputs]]
+id = "GPl1dTPK_2kaNcLjsmNTe"
+uri = "file://artifacts/revive-event-center/public/revive-photos/ballroom.jpg"
+type = "image"
+title = "elegant ballroom interior with chandeliers and golden uplighting"
+
+[[outputs]]
+id = "okpLkxBjY3RHIKYMngMfT"
+uri = "file://artifacts/revive-event-center/public/revive-photos/wedding.jpg"
+type = "image"
+title = "upscale elegant wedding reception table setting"
+
+[[outputs]]
+id = "9YCo_JdZDuHexiInojI15"
+uri = "file://artifacts/revive-event-center/public/revive-photos/quinceanera.jpg"
+type = "image"
+title = "quinceanera elegant celebration dress"
+
+[[outputs]]
+id = "61Wmqwzq6dpGoJuQ6TYbV"
+uri = "file://artifacts/revive-event-center/public/revive-photos/corporate.jpg"
+type = "image"
+title = "corporate gala event ballroom stage"
+
+[[outputs]]
+id = "5_qb34xAcVxPBkUw36aKr"
+uri = "file://artifacts/revive-event-center/public/revive-photos/concert.jpg"
+type = "image"
+title = "live concert event lighting stage"
+
+[[outputs]]
+id = "GetCNmKQu-j1cLRuIQVg0"
+uri = "file://artifacts/revive-event-center/public/revive-photos/holiday.jpg"
+type = "image"
+title = "holiday party elegant celebration"
+
+[[outputs]]
+id = "GqBPQfvCXAO-HnUAucmps"
+uri = "file://artifacts/revive-event-center/public/revive-photos/package.jpg"
+type = "image"
+title = "elegant catered food event plating"
+
+[[outputs]]
+id = "t6kCSu2_5snqhneCGOt74"
+uri = "file://artifacts/revive-event-center/public/revive-photos/prom.jpg"
+type = "image"
+title = "prom celebration dancing"
+
+[[outputs]]
+id = "oKrywbI5oUnsOJGi89GKd"
+uri = "file://artifacts/revive-event-center/public/revive-photos/birthday.jpg"
+type = "image"
+title = "birthday party celebration elegant"
+
+[[outputs]]
+id = "zn97hpczGriuUZAdeax-b"
+uri = "file://artifacts/revive-event-center/public/revive-photos/fundraiser.jpg"
+type = "image"
+title = "fundraiser elegant dinner"
+
+[[outputs]]
+id = "KjwD3aPJFv4kwzGCznsbC"
+uri = "file://artifacts/revive-event-center/public/revive-photos/anniversary.jpg"
+type = "image"
+title = "anniversary celebration elegant table"
+
+[[outputs]]
+id = "fySpBZVYPSbw1jBNhOKwy"
+uri = "file://artifacts/revive-event-center/public/revive-photos/memorial.jpg"
+type = "image"
+title = "memorial service beautiful arrangement"
+
+[[outputs]]
+id = "S2frZaNx-DfcuDHskN1QO"
+uri = "file://artifacts/revive-event-center/public/revive-photos/exterior.jpg"
+type = "image"
+title = "golden hour ballroom exterior"
