@@ -1,6 +1,6 @@
 import { motion, type Variants } from "framer-motion";
 import { ArrowRight, CalendarHeart, PhoneCall, MapPin, Instagram, Facebook, Clock, CheckCircle2, Music, PartyPopper, Users, GlassWater, BookOpen, Star } from "lucide-react";
-import { images, recentEventsGallery } from "@/content/images";
+import { images } from "@/content/images";
 import { Button } from "@/components/ui/button";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 
@@ -38,7 +38,6 @@ export default function Home() {
           <nav className="hidden md:flex items-center gap-6 lg:gap-8 text-sm font-medium">
             <a href="#venue" className="hidden lg:inline-block hover:text-primary transition-colors">The Venue</a>
             <a href="#celebrations" className="hidden lg:inline-block hover:text-primary transition-colors">Celebrations</a>
-            <a href="#gallery" className="hidden lg:inline-block hover:text-primary transition-colors">Gallery</a>
             <a href="tel:2096001502" data-testid="link-nav-phone" className="flex items-center gap-2 hover:text-primary transition-colors">
               <PhoneCall className="w-4 h-4 text-primary" /> {PHONE_DISPLAY}
             </a>
@@ -191,7 +190,7 @@ export default function Home() {
                   </a>
                 </Button>
                 <Button asChild variant="outline" size="lg" className="h-14 px-8 bg-background/10 border-white/40 text-white hover:bg-background/20 hover:text-white backdrop-blur-sm">
-                  <a href="#gallery">See More Photos</a>
+                  <a href="#celebrations">Explore Celebrations</a>
                 </Button>
               </div>
             </motion.div>
@@ -239,53 +238,6 @@ export default function Home() {
                   </div>
                 </motion.div>
               ))}
-            </div>
-          </div>
-        </section>
-
-        {/* RECENT EVENTS GALLERY */}
-        <section id="gallery" className="py-24 md:py-32 bg-background scroll-mt-20">
-          <div className="max-w-7xl mx-auto px-6">
-            <div className="text-center mb-16">
-              <h2 className="text-4xl md:text-5xl font-serif font-medium mb-6">Recent Events & Inspiration</h2>
-              <p className="text-lg text-muted-foreground max-w-2xl mx-auto">Get inspired by the beautiful moments celebrated at Revive Event Center.</p>
-            </div>
-
-            <div className="columns-1 sm:columns-2 lg:columns-3 xl:columns-4 gap-4 space-y-4">
-              {recentEventsGallery.map((item, i) => (
-                <motion.div 
-                  key={item.id}
-                  initial={{ opacity: 0, y: 20 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  viewport={{ once: true }}
-                  transition={{ delay: (i % 4) * 0.1, duration: 0.5 }}
-                  className="break-inside-avoid relative rounded-xl overflow-hidden group shadow-sm hover:shadow-xl transition-all duration-500 bg-muted"
-                >
-                  <img 
-                    src={item.image} 
-                    alt={item.alt} 
-                    className="w-full object-cover group-hover:scale-105 transition-transform duration-700 ease-out" 
-                    loading="lazy"
-                  />
-                  <div className="absolute inset-0 bg-black/0 group-hover:bg-black/40 transition-colors duration-300 flex flex-col justify-end p-4 opacity-0 group-hover:opacity-100">
-                    {item.eventType && <span className="text-primary text-xs font-semibold uppercase tracking-wider mb-1">{item.eventType}</span>}
-                    {item.caption && <p className="text-white text-sm font-medium">{item.caption}</p>}
-                  </div>
-                </motion.div>
-              ))}
-            </div>
-
-            <div className="mt-16 flex flex-col sm:flex-row items-center justify-center gap-4">
-              <Button asChild variant="outline" size="lg" className="w-full sm:w-auto gap-2">
-                <a href={INSTAGRAM_URL} target="_blank" rel="noopener noreferrer">
-                  <Instagram className="w-4 h-4" /> Follow on Instagram
-                </a>
-              </Button>
-              <Button asChild variant="outline" size="lg" className="w-full sm:w-auto gap-2">
-                <a href={FACEBOOK_URL} target="_blank" rel="noopener noreferrer">
-                  <Facebook className="w-4 h-4" /> Follow on Facebook
-                </a>
-              </Button>
             </div>
           </div>
         </section>
