@@ -192,6 +192,8 @@ export default function Home() {
                 { title: "Holiday Parties", image: images.holiday, desc: "Festive gatherings in a warm atmosphere." },
                 { title: "Proms", image: images.prom, desc: "Unforgettable nights of dancing and memories." },
                 { title: "Birthdays", image: images.birthdays, desc: "Celebrate another year in style." },
+                { title: "Anniversaries", image: images.anniversaries, desc: "Mark the milestones that matter most." },
+                { title: "Fundraisers", image: images.fundraisers, desc: "An elevated room for galas and giving." },
                 { title: "Memorials", image: images.memorials, desc: "A respectful, dignified space to gather." }
               ].map((event, i) => (
                 <motion.div 
