@@ -146,8 +146,8 @@ export default function Home() {
               </motion.div>
               
               <motion.div initial="hidden" whileInView="visible" viewport={{ once: true, margin: "-100px" }} variants={fadeInUp} className="relative h-[400px] md:h-[500px] rounded-2xl overflow-hidden shadow-2xl">
-                <img src={images.package} alt="Elegant catering setup at Revive" className="w-full h-full object-cover" />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent flex items-end p-8">
+                <img src={images.package} alt="Artisan grazing table with charcuterie, fruit, cheese and olives at Revive Event Center" className="w-full h-full object-cover" />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/10 to-transparent flex items-end p-8">
                   <p className="text-white font-medium text-lg italic">"Bring your guests to life with events that revive."</p>
                 </div>
               </motion.div>
@@ -207,11 +207,11 @@ export default function Home() {
 
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
               {[
-                { title: "Weddings", image: images.weddings, desc: "Begin your forever in golden-lit elegance." },
+                { title: "Weddings", image: images.weddings, desc: "Blush, ivory, gold — your color story, our ballroom." },
                 { title: "Quinceañeras", image: images.quinceaneras, desc: "A majestic setting for her milestone celebration." },
-                { title: "Corporate Events", image: images.corporate, desc: "Impress clients and inspire your team." },
-                { title: "Concerts", image: images.concerts, desc: "Incredible acoustics and premium staging." },
-                { title: "Holiday Parties", image: images.holiday, desc: "Festive gatherings in a warm atmosphere." },
+                { title: "Corporate Events", image: images.corporate, desc: "Polished navy-and-gold staging for galas and meetings." },
+                { title: "Concerts", image: images.concerts, desc: "Programmable LED uplighting and a wide, open floor." },
+                { title: "Holiday Parties", image: images.holiday, desc: "Festive gatherings in a warm, fully styled room." },
                 { title: "Proms", image: images.prom, desc: "Unforgettable nights of dancing and memories." },
                 { title: "Birthdays", image: images.birthdays, desc: "Celebrate another year in style." },
                 { title: "Anniversaries", image: images.anniversaries, desc: "Mark the milestones that matter most." },
