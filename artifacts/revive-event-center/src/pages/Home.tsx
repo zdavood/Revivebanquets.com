@@ -1,5 +1,6 @@
 import { motion, type Variants } from "framer-motion";
-import { ArrowRight, CalendarHeart, PhoneCall, MapPin, Instagram, Facebook, Clock, CheckCircle2, Music, PartyPopper, Users, GlassWater, BookOpen, Star } from "lucide-react";
+import { ArrowRight, CalendarHeart, PhoneCall, MapPin, Instagram, Facebook, Clock, CheckCircle2, Music, PartyPopper, Users, GlassWater, BookOpen, Star, Navigation, Copy } from "lucide-react";
+import { useState, type MouseEvent } from "react";
 import { images } from "@/content/images";
 import { Button } from "@/components/ui/button";
 
@@ -10,7 +11,40 @@ const PHONE_DISPLAY = "Call (209) 600-1502";
 const INSTAGRAM_URL = "https://instagram.com/revive_banquet_hall";
 const FACEBOOK_URL = "https://www.facebook.com/profile.php?id=61582753781610";
 
+const VENUE_ADDRESS = "443 West 18th Street, Merced, CA 95340";
+const VENUE_ADDRESS_QUERY = encodeURIComponent(VENUE_ADDRESS);
+const GOOGLE_MAPS_DIRECTIONS_URL = `https://www.google.com/maps/dir/?api=1&destination=${VENUE_ADDRESS_QUERY}`;
+const APPLE_MAPS_DIRECTIONS_URL = `https://maps.apple.com/?daddr=${VENUE_ADDRESS_QUERY}`;
+const MAPS_EMBED_URL = `https://www.google.com/maps?q=${VENUE_ADDRESS_QUERY}&output=embed`;
+
+function isAppleMobileDevice(): boolean {
+  if (typeof navigator === "undefined") return false;
+  const ua = navigator.userAgent || "";
+  if (/iPad|iPhone|iPod/.test(ua)) return true;
+  // iPadOS 13+ reports as Mac; treat as Apple device only when touch-enabled
+  return ua.includes("Macintosh") && typeof document !== "undefined" && "ontouchend" in document;
+}
+
+function handleDirectionsClick(event: MouseEvent<HTMLAnchorElement>) {
+  if (isAppleMobileDevice()) {
+    event.preventDefault();
+    window.open(APPLE_MAPS_DIRECTIONS_URL, "_blank", "noopener,noreferrer");
+  }
+}
+
 export default function Home() {
+  const [copied, setCopied] = useState(false);
+
+  const handleCopyAddress = async () => {
+    try {
+      await navigator.clipboard.writeText(VENUE_ADDRESS);
+      setCopied(true);
+      setTimeout(() => setCopied(false), 2000);
+    } catch {
+      setCopied(false);
+    }
+  };
+
   const fadeInUp: Variants = {
     hidden: { opacity: 0, y: 30 },
     visible: { opacity: 1, y: 0, transition: { duration: 0.6, ease: [0.16, 1, 0.3, 1] } }
@@ -409,6 +443,111 @@ export default function Home() {
             </div>
           </div>
         </section>
+        {/* FIND US — MAP & DIRECTIONS */}
+        <section id="find-us" className="py-24 md:py-32 bg-background border-t border-border scroll-mt-20">
+          <div className="max-w-7xl mx-auto px-6">
+            <div className="text-center max-w-3xl mx-auto mb-12">
+              <span className="text-primary text-sm font-semibold uppercase tracking-[0.2em]">Find Us</span>
+              <h2 className="text-4xl md:text-5xl font-serif font-medium mt-4 mb-6">Right in the heart of Merced.</h2>
+              <p className="text-lg text-muted-foreground">Conveniently located at 443 West 18th Street — easy to find, easy to get to, with parking nearby.</p>
+            </div>
+
+            <div className="grid lg:grid-cols-5 gap-8 lg:gap-10 items-stretch">
+              {/* Map embed */}
+              <motion.div
+                initial={{ opacity: 0, y: 24 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true, margin: "-80px" }}
+                transition={{ duration: 0.6, ease: [0.16, 1, 0.3, 1] }}
+                className="lg:col-span-3 rounded-2xl overflow-hidden border border-border shadow-xl bg-muted aspect-[4/3] lg:aspect-auto lg:min-h-[420px]"
+              >
+                <iframe
+                  src={MAPS_EMBED_URL}
+                  title="Map showing Revive Event Center at 443 West 18th Street, Merced, CA 95340"
+                  className="w-full h-full border-none block"
+                  loading="lazy"
+                  referrerPolicy="no-referrer-when-downgrade"
+                  allowFullScreen
+                  data-testid="iframe-venue-map"
+                />
+              </motion.div>
+
+              {/* Address & Directions card */}
+              <motion.div
+                initial={{ opacity: 0, y: 24 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true, margin: "-80px" }}
+                transition={{ duration: 0.6, delay: 0.1, ease: [0.16, 1, 0.3, 1] }}
+                className="lg:col-span-2 bg-card border border-border rounded-2xl p-8 md:p-10 shadow-lg flex flex-col"
+              >
+                <div className="flex items-center gap-3 mb-6">
+                  <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center shrink-0">
+                    <MapPin className="w-6 h-6 text-primary" />
+                  </div>
+                  <h3 className="text-2xl font-serif font-medium">Revive Event Center</h3>
+                </div>
+
+                <address className="not-italic mb-8">
+                  <p className="text-lg text-foreground font-medium leading-relaxed select-text" data-testid="text-venue-address">
+                    443 West 18th Street<br />
+                    Merced, CA 95340
+                  </p>
+                  <button
+                    type="button"
+                    onClick={handleCopyAddress}
+                    data-testid="button-copy-address"
+                    className="mt-3 inline-flex items-center gap-2 text-sm text-muted-foreground hover:text-primary transition-colors"
+                    aria-label="Copy address to clipboard"
+                  >
+                    <Copy className="w-3.5 h-3.5" />
+                    {copied ? "Address copied" : "Copy address"}
+                  </button>
+                </address>
+
+                <div className="space-y-3 mb-8 text-muted-foreground">
+                  <div className="flex items-start gap-3">
+                    <Clock className="w-4 h-4 text-primary mt-1 shrink-0" />
+                    <p className="text-sm leading-relaxed">Tours by appointment — we'll meet you at the front entrance.</p>
+                  </div>
+                  <div className="flex items-start gap-3">
+                    <Users className="w-4 h-4 text-primary mt-1 shrink-0" />
+                    <p className="text-sm leading-relaxed">Street parking and nearby lots available for your guests.</p>
+                  </div>
+                </div>
+
+                <div className="flex flex-col gap-3 mt-auto">
+                  <Button
+                    asChild
+                    size="lg"
+                    className="w-full h-14 bg-primary text-primary-foreground hover:bg-primary/90 shadow-lg shadow-primary/20"
+                  >
+                    <a
+                      href={GOOGLE_MAPS_DIRECTIONS_URL}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      onClick={handleDirectionsClick}
+                      data-testid="link-get-directions"
+                    >
+                      <Navigation className="mr-2 w-4 h-4" />
+                      Get Directions
+                    </a>
+                  </Button>
+                  <Button
+                    asChild
+                    variant="outline"
+                    size="lg"
+                    className="w-full h-14"
+                  >
+                    <a href={`tel:${PHONE}`} data-testid="link-find-us-call">
+                      <PhoneCall className="mr-2 w-4 h-4" />
+                      {PHONE_DISPLAY}
+                    </a>
+                  </Button>
+                </div>
+              </motion.div>
+            </div>
+          </div>
+        </section>
       </main>
 
       {/* FOOTER */}
@@ -442,6 +581,17 @@ export default function Home() {
                 <p>443 West 18th Street</p>
                 <p>Merced, CA 95340</p>
                 <p className="pt-2 text-primary">Private tours by appointment</p>
+                <a
+                  href={GOOGLE_MAPS_DIRECTIONS_URL}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  onClick={handleDirectionsClick}
+                  data-testid="link-footer-directions"
+                  className="inline-flex items-center gap-2 text-sm text-foreground hover:text-primary transition-colors pt-2"
+                >
+                  <Navigation className="w-3.5 h-3.5" />
+                  Get Directions
+                </a>
               </address>
             </div>
 
