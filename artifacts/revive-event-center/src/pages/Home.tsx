@@ -65,10 +65,6 @@ export default function Home() {
           
           <div className="relative z-20 w-full max-w-5xl mx-auto px-6 py-20 flex flex-col items-center text-center">
             <motion.div initial="hidden" animate="visible" variants={staggerContainer} className="space-y-6">
-              <motion.div variants={fadeInUp} className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-primary/10 border border-primary/20 text-primary text-sm font-medium mb-4 shadow-sm backdrop-blur-sm">
-                <Star className="w-4 h-4 fill-primary/20" /> Grand Opening Venue
-              </motion.div>
-              
               <motion.h1 variants={fadeInUp} className="text-5xl md:text-7xl lg:text-8xl font-serif font-medium tracking-tight text-white leading-[1.1] [text-shadow:0_2px_30px_rgba(0,0,0,0.4)]">
                 Merced's Premier <span className="text-primary italic pr-2">Event Venue</span>
               </motion.h1>
