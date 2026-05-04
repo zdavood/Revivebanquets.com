@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+  xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+  <url>
+    <loc>https://reviveeventcenter.com/</loc>
+    <lastmod>2026-05-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://reviveeventcenter.com/opengraph.jpg</image:loc>
+      <image:title>Revive Event Center — Merced, CA</image:title>
+      <image:caption>Revive Event Center ballroom in Merced, California</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://reviveeventcenter.com/revive-photos/scale-front.jpg</image:loc>
+      <image:title>Revive Event Center ballroom set for 200+ guests</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://reviveeventcenter.com/revive-photos/setup-blush.jpg</image:loc>
+      <image:title>Blush and ivory wedding reception at Revive Event Center</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://reviveeventcenter.com/revive-photos/setup-burgundy.jpg</image:loc>
+      <image:title>Crimson and ivory quinceañera at Revive Event Center</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://reviveeventcenter.com/revive-photos/exterior.jpg</image:loc>
+      <image:title>Revive Event Center storefront at 443 W 18th Street, Merced</image:title>
+    </image:image>
+  </url>
+</urlset>
