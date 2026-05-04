@@ -77,7 +77,7 @@ export default function Home() {
               <motion.div variants={fadeInUp} className="flex flex-col sm:flex-row items-center justify-center gap-4 pt-8 w-full max-w-md mx-auto sm:max-w-none">
                 <Button asChild size="lg" className="w-full sm:w-auto text-base h-14 px-8 bg-primary hover:bg-primary/90 text-primary-foreground shadow-lg shadow-primary/20 hover:shadow-xl hover:-translate-y-0.5 transition-all">
                   <a href={VENUESOS_TOUR} target="_blank" rel="noopener noreferrer">
-                    Schedule a Private Tour <ArrowRight className="ml-2 w-4 h-4" />
+                    Schedule a Tour <ArrowRight className="ml-2 w-4 h-4" />
                   </a>
                 </Button>
                 <Button asChild variant="outline" size="lg" className="w-full sm:w-auto text-base h-14 px-8 border-border bg-background/50 backdrop-blur-sm hover:bg-background/80 hover:text-primary transition-all">
@@ -88,7 +88,7 @@ export default function Home() {
                 <Button asChild variant="ghost" size="lg" className="w-full sm:w-auto text-base h-14 px-6 hover:bg-background/60 hover:text-primary transition-all">
                   <a href={`tel:${PHONE}`}>
                     <PhoneCall className="mr-2 w-4 h-4" />
-                    {PHONE_DISPLAY}
+                    Call Now
                   </a>
                 </Button>
               </motion.div>
@@ -369,15 +369,15 @@ export default function Home() {
       <div className="md:hidden fixed bottom-0 left-0 right-0 z-50 bg-background border-t border-border flex shadow-[0_-10px_40px_rgba(0,0,0,0.1)]">
         <a href={`tel:${PHONE}`} className="flex-1 flex flex-col items-center justify-center py-3 px-2 text-xs font-medium text-foreground hover:bg-muted transition-colors border-r border-border">
           <PhoneCall className="w-5 h-5 mb-1" />
-          Call
+          Call Now
         </a>
         <a href={VENUESOS_TOUR} target="_blank" rel="noopener noreferrer" className="flex-1 flex flex-col items-center justify-center py-3 px-2 text-xs font-medium bg-primary text-primary-foreground hover:bg-primary/90 transition-colors border-r border-primary/20">
           <Clock className="w-5 h-5 mb-1" />
-          Tour
+          Schedule Tour
         </a>
         <a href={VENUESOS_INQUIRY} target="_blank" rel="noopener noreferrer" className="flex-1 flex flex-col items-center justify-center py-3 px-2 text-xs font-medium text-foreground hover:bg-muted transition-colors">
           <CalendarHeart className="w-5 h-5 mb-1" />
-          Contact
+          Contact Us
         </a>
       </div>
     </div>
