@@ -598,8 +598,7 @@ export default function Home() {
             <div className="space-y-4">
               <h4 className="font-medium text-lg">Contact</h4>
               <div className="space-y-2 text-muted-foreground flex flex-col">
-                <a href={`tel:${PHONE}`} className="hover:text-primary transition-colors">Main: (209) 600-1502</a>
-                <a href="tel:2092023059" className="hover:text-primary transition-colors">Booking: (209) 202-3059</a>
+                <a href={`tel:${PHONE}`} className="hover:text-primary transition-colors">(209) 600-1502</a>
                 <a href="mailto:bookings@revivebanquets.com" className="hover:text-primary transition-colors mt-2">bookings@revivebanquets.com</a>
               </div>
             </div>
