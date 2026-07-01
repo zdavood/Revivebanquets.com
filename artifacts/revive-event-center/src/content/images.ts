@@ -40,13 +40,25 @@ export const images = {
   comedyWide: "/revive-photos/comedy-wide.jpg",
   comedySide: "/revive-photos/comedy-side.jpg",
   comedyPerformer: "/revive-photos/comedy-performer.jpg",
+  comedyRed: "/revive-photos/comedy-red.jpg",
+
+  // Cultural / multicultural celebrations — real South Asian weddings,
+  // reception dances, and traditional ceremonies hosted at Revive.
+  culturalDance: "/revive-photos/cultural-dance.jpg",
+  culturalCeremony: "/revive-photos/cultural-ceremony.jpg",
+
+  // Real amenities & atmosphere: the full bar and candlelit evening ambiance.
+  bar: "/revive-photos/bar.jpg",
+  ambiance: "/revive-photos/ambiance.jpg",
 
   // Event-type cards mapped to fully-styled setup photos so each celebration
   // type shows what a finished room looks like in that color story.
   weddings: "/revive-photos/setup-blush.jpg",
   quinceaneras: "/revive-photos/setup-burgundy.jpg",
+  cultural: "/revive-photos/cultural-dance.jpg",
+  ceremonies: "/revive-photos/cultural-ceremony.jpg",
   corporate: "/revive-photos/scale-front.jpg",
-  concerts: "/revive-photos/comedy-wide.jpg",
+  concerts: "/revive-photos/comedy-red.jpg",
   holiday: "/revive-photos/setup-burgundy.jpg",
   prom: "/revive-photos/setup-teal.jpg",
   birthdays: "/revive-photos/setup-greenery.jpg",

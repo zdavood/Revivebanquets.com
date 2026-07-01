@@ -189,6 +189,57 @@ export default function Home() {
           </div>
         </section>
 
+        {/* INSIDE REVIVE — real amenities: bar + evening ambiance */}
+        <section className="py-24 md:py-32 bg-card border-y border-border">
+          <div className="max-w-7xl mx-auto px-6">
+            <div className="text-center max-w-3xl mx-auto mb-14">
+              <span className="text-primary text-sm font-semibold uppercase tracking-[0.25em]">Inside Revive</span>
+              <h2 className="text-4xl md:text-5xl font-serif font-medium mt-4">More than a room</h2>
+              <p className="text-lg text-muted-foreground mt-6">An elegant on-site bar and fully programmable lighting turn an empty hall into the mood your event deserves — from bright and celebratory to candlelit and intimate.</p>
+            </div>
+
+            <div className="grid md:grid-cols-2 gap-5 md:gap-6">
+              {[
+                {
+                  image: images.bar,
+                  title: "The Bar",
+                  desc: "A granite-topped service bar with lit displays, ready for your bartenders and beverage service.",
+                  alt: "Granite-topped service bar with backlit wine and liquor display inside Revive Event Center",
+                },
+                {
+                  image: images.ambiance,
+                  title: "Evening Ambiance",
+                  desc: "Programmable LED lighting and candlelit round tables set a dramatic, intimate evening tone.",
+                  alt: "Round tables with flickering candles set under deep blue LED uplighting for an evening event at Revive",
+                },
+              ].map((item, i) => (
+                <motion.div
+                  key={item.title}
+                  initial={{ opacity: 0, y: 24 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true, margin: "-80px" }}
+                  transition={{ delay: i * 0.1, duration: 0.5, ease: [0.16, 1, 0.3, 1] }}
+                  className="group relative aspect-[16/11] rounded-2xl overflow-hidden bg-muted"
+                >
+                  <img
+                    src={item.image}
+                    alt={item.alt}
+                    loading="lazy"
+                    className="w-full h-full object-cover transition-transform duration-[900ms] ease-out group-hover:scale-[1.04]"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/30 to-transparent" />
+                  <div className="absolute inset-0 flex flex-col justify-end p-7 md:p-8">
+                    <h3 className="text-white text-2xl md:text-[28px] font-serif font-medium leading-tight mb-2 [text-shadow:0_1px_20px_rgba(0,0,0,0.4)]">
+                      {item.title}
+                    </h3>
+                    <p className="text-white/85 text-[15px] leading-relaxed max-w-[42ch]">{item.desc}</p>
+                  </div>
+                </motion.div>
+              ))}
+            </div>
+          </div>
+        </section>
+
         {/* SEE THE SCALE — full-bleed venue showcase */}
         <section className="relative h-[80vh] min-h-[520px] md:min-h-[640px] w-full overflow-hidden">
           <img
@@ -234,7 +285,7 @@ export default function Home() {
             <div className="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-6">
               <div className="max-w-2xl">
                 <h2 className="text-4xl md:text-5xl font-serif font-medium mb-6">Celebrations We Host</h2>
-                <p className="text-lg text-muted-foreground">From the most sacred vows to the wildest corporate galas, our space transforms to fit your vision.</p>
+                <p className="text-lg text-muted-foreground">From South Asian and multicultural weddings to corporate galas and live shows, our space transforms to honor every tradition and vision.</p>
               </div>
               <Button asChild variant="outline" className="shrink-0 hidden md:flex">
                 <a href={VENUESOS_INQUIRY} target="_blank" rel="noopener noreferrer">Send an Inquiry</a>
@@ -252,20 +303,34 @@ export default function Home() {
                 },
                 {
                   eyebrow: "02",
+                  title: "Cultural & Multicultural Weddings",
+                  image: images.cultural,
+                  desc: "Mehndi, sangeet, baraat, and receptions — an open floor and grand chandeliers ready for every tradition.",
+                  alt: "Guests in colorful lehengas dancing on the white dance floor beneath a crystal chandelier at a South Asian wedding at Revive",
+                },
+                {
+                  eyebrow: "03",
+                  title: "Ceremonies & Cultural Traditions",
+                  image: images.ceremonies,
+                  desc: "Religious ceremonies, cultural rituals, and multi-day celebrations honored with space, staging, and care.",
+                  alt: "Colorful floral stage with decorative umbrellas set for a traditional South Asian ceremony at Revive",
+                },
+                {
+                  eyebrow: "04",
                   title: "Corporate & Formal Events",
                   image: images.corporate,
                   desc: "Clean, professional setups with room for presentations, dining, and large groups.",
                   alt: "Wide ballroom set with rows of round tables and chiavari chairs for a corporate event",
                 },
                 {
-                  eyebrow: "03",
+                  eyebrow: "05",
                   title: "Live Events — Concerts & Comedy",
                   image: images.concerts,
                   desc: "Stage-ready layout with programmable lighting and flexible seating for performances.",
-                  alt: "Comedy night at Revive with performer on stage and seated audience under red uplighting",
+                  alt: "Comedy night at Revive with a performer on stage under dramatic red uplighting",
                 },
                 {
-                  eyebrow: "04",
+                  eyebrow: "06",
                   title: "Private Celebrations",
                   image: images.birthdays,
                   desc: "Birthdays, anniversaries, and gatherings tailored to your vision.",

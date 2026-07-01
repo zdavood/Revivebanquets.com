@@ -20,6 +20,12 @@ const SRC = {
   comedyWide: path.join(ATTACHED, "IMG_5997_1777920270356.jpeg"),
   comedySide: path.join(ATTACHED, "IMG_5998_1777920270357.jpeg"),
   comedyPerformer: path.join(ATTACHED, "FullSizeRender_1777920270357.jpeg"),
+  // Cultural / South Asian celebrations, real bar, and candlelit evening ambiance
+  culturalDance: path.join(ATTACHED, "IMG_0120_1782944710378.jpeg"),
+  culturalCeremony: path.join(ATTACHED, "IMG_0011_1782944710379.png"),
+  bar: path.join(ATTACHED, "IMG_5884_1782944710378.jpeg"),
+  ambiance: path.join(ATTACHED, "IMG_5993_1782944710378.jpeg"),
+  comedyRed: path.join(ATTACHED, "FullSizeRender_1782944710377.jpeg"),
 };
 
 async function landscape(srcPath, outName, width = 2400) {
@@ -27,6 +33,17 @@ async function landscape(srcPath, outName, width = 2400) {
   await sharp(srcPath)
     .rotate()
     .resize({ width, withoutEnlargement: true })
+    .jpeg({ quality: 82, mozjpeg: true })
+    .toFile(out);
+  const { size } = fs.statSync(out);
+  console.log(`  ${outName}  ${(size / 1024).toFixed(0)}KB`);
+}
+
+async function fit(srcPath, outName, max = 2000) {
+  const out = path.join(OUT, outName);
+  await sharp(srcPath)
+    .rotate()
+    .resize({ width: max, height: max, fit: "inside", withoutEnlargement: true })
     .jpeg({ quality: 82, mozjpeg: true })
     .toFile(out);
   const { size } = fs.statSync(out);
@@ -93,6 +110,12 @@ async function sliceCollage() {
   await landscape(SRC.comedyWide, "comedy-wide.jpg", 2400);
   await landscape(SRC.comedySide, "comedy-side.jpg", 2400);
   await landscape(SRC.comedyPerformer, "comedy-performer.jpg", 2000);
+  console.log("Processing cultural, bar, and ambiance shots...");
+  await fit(SRC.culturalDance, "cultural-dance.jpg", 2000);
+  await fit(SRC.culturalCeremony, "cultural-ceremony.jpg", 2000);
+  await fit(SRC.bar, "bar.jpg", 2000);
+  await fit(SRC.ambiance, "ambiance.jpg", 2400);
+  await fit(SRC.comedyRed, "comedy-red.jpg", 2000);
   console.log("Done.");
 })().catch((e) => {
   console.error(e);
