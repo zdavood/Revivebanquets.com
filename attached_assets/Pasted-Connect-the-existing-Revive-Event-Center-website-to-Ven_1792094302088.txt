@@ -1,0 +1,101 @@
+Connect the existing Revive Event Center website to VenueOS’s tenant-isolated scheduling and inquiry pages.
+
+Website: https://revive-event-hub.replit.app
+VenueOS: https://venuesos.com
+
+Keep the existing website design, branding, content, and working functionality. This is an integration fix, not a redesign.
+
+BACKGROUND
+The current Tour and Inquiry buttons link to bare VenueOS URLs without identifying Revive. This causes tenant-resolution failures that previously appeared as “no openings.”
+
+VenueOS integration fixes have been implemented in development, but publication is a separate step. Do not assume those changes are already live.
+
+1. VERIFY THE VENUE IDENTIFIER
+Use Revive’s actual configured public venue slug from VenueOS:
+Settings → Venue → Venue Identity.
+
+At the last production check, Revive’s slug was missing. Do not guess that it is “revive,” invent a venue ID, or silently fall back to another venue.
+
+If you cannot determine the configured slug, ask me to provide it. You can inspect and prepare the website changes while waiting, but do not ship placeholder links.
+
+2. UPDATE THE EXISTING WEBSITE LINKS
+Use the verified, URL-encoded slug in these URLs:
+
+Tour:
+https://venuesos.com/schedule-tour?venue=SLUG
+
+Consultation:
+https://venuesos.com/schedule-call?venue=SLUG
+
+Inquiry:
+https://venuesos.com/inquiry?venue=SLUG
+
+Event-date availability:
+https://venuesos.com/availability?venue=SLUG
+
+Find all relevant links throughout the website, including desktop navigation, mobile navigation, hero buttons, footer links, and repeated calls to action.
+
+Update existing relevant buttons. Do not add unnecessary buttons or new pages.
+
+Use one shared website configuration value for the VenueOS origin and Revive’s slug so links cannot drift apart.
+
+Use normal links to the hosted VenueOS pages. Do not build a second scheduler, duplicate CRM, or local booking database. Do not use /tour as the booking page; /tour/TOKEN is a private appointment-management link.
+
+Preserve utm_source, utm_medium, and utm_campaign when passing visitors to the hosted inquiry page, where present. Do not copy arbitrary URL parameters or sensitive information.
+
+3. EXISTING WEBSITE FORMS
+If this website already has a working native inquiry form, inspect how it submits before changing it. Preserve the form’s design and avoid duplicate submissions or duplicate emails.
+
+If retaining that form, submit from the website backend to:
+POST https://venuesos.com/api/inquiries
+
+Headers:
+Content-Type: application/json
+X-Venue-Slug: VERIFIED_SLUG
+
+Required JSON:
+name: nonempty text, maximum 200 characters
+email: valid email, maximum 320 characters
+
+Optional supported fields:
+requestId: UUID generated once per intended submission and reused on retry
+phone: maximum 40 characters
+eventType: maximum 100 characters
+preferredDate: YYYY-MM-DD
+guestCount: integer 1–10000
+hasAlcohol: boolean
+budgetRange: maximum 100 characters
+notes: maximum 5000 characters
+leadSource: maximum 100 characters
+website: empty honeypot field
+attribution: utmSource, utmMedium, utmCampaign, referrer, landingPage
+
+Do not send venueId, account IDs, customer IDs, or booking IDs. VenueOS resolves ownership from the slug.
+
+Only show success after receiving ok: true. Preserve entered details on failure. Reuse the same requestId for retries of unchanged content; changed content requires a new ID.
+
+A replayed response is the original saved inquiry, not another conversion. An email-delivery failure does not mean the inquiry was not saved.
+
+Do not expose platform secrets, write directly to VenueOS’s database, disable CSRF, or weaken CORS. Prefer hosted inquiry links if the website does not have an appropriate backend.
+
+4. VERIFICATION
+Check every changed link on desktop and mobile. Verify that:
+- Every link contains the correct venue slug.
+- Switching between scheduling options retains the venue.
+- Pages identify Revive, not another tenant.
+- Missing configuration or API failures are not presented as “fully booked.”
+- Narrow screens can display and scroll the relevant content.
+
+Use read-only checks against production. Do not create live bookings, send customer emails, submit real inquiries, or alter production configuration for testing. Use mocks or an isolated development environment for submission tests.
+
+Check Safari/WebKit if available. If unavailable, say so explicitly; mobile Chromium emulation is not Safari testing.
+
+5. DELIVERY
+Implement the website-side changes, then report:
+- Which links/forms were changed.
+- The exact configured slug used.
+- What was tested and what passed.
+- Whether the published VenueOS endpoints are ready.
+- Any remaining configuration or publication blocker.
+
+Do not claim the live integration works merely because the website compiles or links contain a slug. Do not publish automatically; leave publication for my approval.
