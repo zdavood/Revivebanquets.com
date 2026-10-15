@@ -26,6 +26,8 @@ const SRC = {
   bar: path.join(ATTACHED, "IMG_5884_1782944710378.jpeg"),
   ambiance: path.join(ATTACHED, "IMG_5993_1782944710378.jpeg"),
   comedyRed: path.join(ATTACHED, "FullSizeRender_1782944710377.jpeg"),
+  weddingRedSetup: path.join(ATTACHED, "revive-wedding-red-setup.jpg"),
+  colorfulReceptionSetup: path.join(ATTACHED, "revive-colorful-reception-setup.jpg"),
 };
 
 async function landscape(srcPath, outName, width = 2400) {
@@ -116,6 +118,9 @@ async function sliceCollage() {
   await fit(SRC.bar, "bar.jpg", 2000);
   await fit(SRC.ambiance, "ambiance.jpg", 2400);
   await fit(SRC.comedyRed, "comedy-red.jpg", 2000);
+  console.log("Processing newly shared event photos...");
+  await fit(SRC.weddingRedSetup, "event-wedding-red-setup.jpg", 2200);
+  await fit(SRC.colorfulReceptionSetup, "event-colorful-reception-setup.jpg", 2200);
   console.log("Done.");
 })().catch((e) => {
   console.error(e);

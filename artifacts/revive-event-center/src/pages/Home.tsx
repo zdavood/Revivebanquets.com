@@ -299,7 +299,7 @@ export default function Home() {
                   title: "Weddings & Quinceañeras",
                   image: images.weddings,
                   desc: "Elegant, fully customizable layouts designed for milestone celebrations.",
-                  alt: "Blush and ivory wedding reception styled inside the Revive ballroom",
+                  alt: "Wedding reception at Revive with white floral centerpieces, red table settings, and red ceiling lighting",
                 },
                 {
                   eyebrow: "02",
@@ -313,7 +313,7 @@ export default function Home() {
                   title: "Ceremonies & Cultural Traditions",
                   image: images.ceremonies,
                   desc: "Religious ceremonies, cultural rituals, and multi-day celebrations honored with space, staging, and care.",
-                  alt: "Colorful floral stage with decorative umbrellas set for a traditional South Asian ceremony at Revive",
+                  alt: "Colorful reception setup at Revive with teal and purple tables, gold chair covers, and a decorated stage",
                 },
                 {
                   eyebrow: "04",

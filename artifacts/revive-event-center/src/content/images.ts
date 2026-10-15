@@ -53,10 +53,10 @@ export const images = {
 
   // Event-type cards mapped to fully-styled setup photos so each celebration
   // type shows what a finished room looks like in that color story.
-  weddings: "/revive-photos/setup-blush.jpg",
+  weddings: "/revive-photos/event-wedding-red-setup.jpg",
   quinceaneras: "/revive-photos/setup-burgundy.jpg",
   cultural: "/revive-photos/cultural-dance.jpg",
-  ceremonies: "/revive-photos/cultural-ceremony.jpg",
+  ceremonies: "/revive-photos/event-colorful-reception-setup.jpg",
   corporate: "/revive-photos/scale-front.jpg",
   concerts: "/revive-photos/comedy-red.jpg",
   holiday: "/revive-photos/setup-burgundy.jpg",
