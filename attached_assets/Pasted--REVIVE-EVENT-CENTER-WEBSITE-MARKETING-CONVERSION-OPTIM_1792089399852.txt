@@ -1,0 +1,363 @@
+# REVIVE EVENT CENTER — WEBSITE MARKETING & CONVERSION OPTIMIZATION
+
+## YOUR ROLE
+
+You are the senior web designer, conversion rate optimization specialist, SEO specialist, and frontend developer responsible for the Revive Event Center website.
+
+Work from the existing Replit project:
+
+https://revive-event-hub.replit.app
+
+Your assignment is to improve the existing website to attract more qualified customers, encourage venue tours, and generate additional event inquiries.
+
+The website already has a visual identity and functional foundation. Improve what exists rather than undertaking an unnecessary redesign.
+
+## CRITICAL PROJECT BOUNDARY
+
+A separate development agent is responsible for all VenueOS integrations, including Schedule a Tour and backend inquiry handling.
+
+You are responsible for the PUBLIC-FACING WEBSITE ONLY.
+
+DO NOT:
+- Modify VenueOS source code or database models.
+- Rebuild or replace the tour scheduling system.
+- Change scheduling availability logic.
+- Create a second CRM, calendar, or booking backend.
+- Modify existing backend integration endpoints without coordinating with the VenueOS agent.
+- Interfere with the other agent's ongoing work.
+
+If an improvement requires backend changes, document the exact frontend requirements and integration contract for the other agent.
+
+Do not wait unnecessarily for unrelated backend work.
+
+---
+
+# PHASE 1 — COMPLETE WEBSITE REVIEW
+
+Inspect the entire existing application before making changes.
+
+Review:
+- Homepage
+- Navigation
+- Venue and event-type sections
+- Photo galleries
+- Contact and inquiry interfaces
+- Footer
+- Desktop and mobile layouts
+- Internal links and external destinations
+- All customer-facing buttons
+- SEO implementation
+- Accessibility
+- Performance
+- Existing content and branding
+
+Identify which elements already work well and preserve them.
+
+Favor surgical improvements over rewrites.
+
+---
+
+# PHASE 2 — HOMEPAGE CONVERSION OPTIMIZATION
+
+The first screen must immediately communicate:
+
+1. What Revive Event Center is.
+2. Where it is located.
+3. What events it accommodates.
+4. Its capacity.
+5. How visitors can take the next step.
+
+Verified business information:
+
+Business: Revive Event Center
+Address: 443 W. 18th Street, Merced, CA 95340
+Phone: 209-600-1502
+Seated capacity: Up to 350 guests
+
+Event categories include:
+- Weddings
+- Quinceañeras
+- Corporate events
+- Private celebrations
+- Cultural celebrations
+
+Retain the established upscale gold, cream, and neutral visual identity.
+
+Improve the headline and supporting copy to communicate the venue's value clearly rather than relying entirely on generic luxury claims.
+
+Clearly present:
+
+"Up to 350 Guests"
+
+Retain three primary actions:
+
+- Schedule a Tour
+- Call Now
+- Send an Inquiry
+
+Avoid excessive buttons competing for attention.
+
+Correct outdated messaging such as "Now Booking 2026" by using evergreen wording such as "Now Accepting Reservations" or verified current booking information.
+
+Do not make unsupported claims about availability.
+
+---
+
+# PHASE 3 — SELL THE VENUE'S ACTUAL ADVANTAGES
+
+Introduce or improve a concise section explaining why someone should consider Revive.
+
+Potential selling points to verify against current venue policies:
+
+- Up to 350 seated guests
+- Flexible event layouts
+- Indoor event space
+- Tables and chairs
+- Prep kitchen
+- Outside vendor flexibility
+- Optional staffing or event services
+
+Clearly separate rental inclusions from optional services.
+
+Do not invent amenities, packages, complimentary services, or guarantees.
+
+Explain the booking process in three simple stages:
+
+1. Explore or tour the venue.
+2. Discuss event details and receive a proposal.
+3. Review the agreement and secure the reservation.
+
+Use existing website components where practical.
+
+---
+
+# PHASE 4 — PHOTOGRAPHY AND PRESENTATION
+
+Audit all photographs and visual assets.
+
+The actual venue must be represented accurately.
+
+Prioritize authentic Revive Event Center photographs showing:
+- The main ballroom
+- Different event configurations
+- Tables and seating arrangements
+- Weddings and celebrations held at the venue, where properly authorized
+- Stage, dance floor, and relevant amenities
+
+Do not present stock or AI-generated ballrooms as photographs of the actual property.
+
+If an image is illustrative rather than authentic, it must not mislead customers about the physical venue.
+
+Improve image cropping, consistency, resolution, compression, and mobile presentation.
+
+Do not replace real venue photographs unnecessarily.
+
+---
+
+# PHASE 5 — CUSTOMER TRUST
+
+Make the website feel like an established, legitimate business.
+
+Ensure that the following information is readily available:
+
+- Correct business name
+- Address
+- Telephone number
+- Clear event categories
+- Authentic venue imagery
+- Contact methods
+- Understandable booking process
+
+If verified customer testimonials or reviews already exist, present them appropriately.
+
+Do not fabricate reviews, ratings, client logos, awards, or event history.
+
+Consider a tasteful FAQ covering:
+
+- Venue capacity
+- Types of events accepted
+- Tour scheduling
+- General booking process
+- Outside vendors
+- What's included in the rental
+- Availability inquiries
+
+Use verified policies, not guesses.
+
+---
+
+# PHASE 6 — MOBILE WEBSITE OPTIMIZATION
+
+Test common mobile, tablet, and desktop viewport sizes.
+
+Pay special attention to:
+
+- Hero image composition
+- Headline readability
+- Button placement
+- Navigation usability
+- Sticky mobile contact bar
+- Tap-target sizing
+- Text contrast
+- Gallery layouts
+- Forms
+- Footer
+
+Ensure the fixed mobile navigation bar never obscures important content or form controls.
+
+Respect device safe areas.
+
+Maintain consistent visual quality across screen sizes.
+
+---
+
+# PHASE 7 — SEARCH ENGINE OPTIMIZATION
+
+Implement or improve technical SEO using the existing framework.
+
+Review:
+
+- Unique page titles
+- Meta descriptions
+- Semantic headings
+- Indexable page content
+- Canonical URLs
+- Open Graph metadata
+- Social sharing images
+- Descriptive image alt attributes
+- Sitemap
+- Robots configuration
+- Appropriate LocalBusiness structured data
+- Internal linking
+- Image optimization
+
+Focus on genuine local customer searches such as:
+
+- Wedding venues in Merced
+- Banquet halls in Merced
+- Quinceañera venues in Merced
+- Event venues in Merced
+- Corporate event spaces in Merced
+
+Avoid keyword stuffing or creating duplicate low-value pages.
+
+The older revivebanquets.com website remains a separate domain consideration.
+
+Prepare a migration and redirect recommendation, but do not modify either domain or publish redirects without owner approval.
+
+---
+
+# PHASE 8 — CALLS TO ACTION AND FRONTEND INTEGRATION
+
+Ensure every visible CTA has a valid, intended destination.
+
+### Schedule a Tour
+
+The separate VenueOS agent owns this functionality.
+
+Do not develop a new scheduling backend.
+
+Preserve the frontend integration point and coordinate the final venue-specific scheduling URL or interface with that agent.
+
+### Call Now
+
+Use:
+
+tel:+12096001502
+
+### Send an Inquiry
+
+Ensure the frontend collects appropriate customer details without excessive friction.
+
+The VenueOS agent owns submission processing, database records, and notifications.
+
+Coordinate any required frontend form schema with that agent.
+
+Do not create competing inquiry storage systems.
+
+Provide useful error, loading, and success states.
+
+Never display a successful submission unless the backend actually accepted it.
+
+---
+
+# PHASE 9 — PERFORMANCE AND ACCESSIBILITY
+
+Optimize existing components for performance without harming design quality.
+
+Check:
+
+- Image loading
+- Layout shifts
+- Font loading
+- Unnecessary scripts
+- Unused dependencies
+- JavaScript errors
+- Accessibility labels
+- Keyboard navigation
+- Visible focus states
+- WCAG 2.2 AA-relevant contrast and interaction requirements
+
+Aim for strong mobile performance and accessibility.
+
+Report measured results rather than claiming performance improvements without testing.
+
+---
+
+# PHASE 10 — CONVERSION ANALYTICS
+
+Inspect existing analytics implementation.
+
+If already present, ensure the frontend can distinguish:
+
+- Page views
+- Tour-button clicks
+- Inquiry-button clicks
+- Telephone clicks
+- Inquiry form starts
+- Confirmed inquiry submissions
+
+Do not create redundant analytics systems.
+
+Coordinate completed booking and accepted inquiry events with the VenueOS integration agent.
+
+Do not treat a button click as proof that an appointment or inquiry was completed.
+
+---
+
+# IMPLEMENTATION RULES
+
+1. Inspect before changing.
+2. Preserve the established website design.
+3. Prioritize improvements with plausible conversion benefits.
+4. Make changes within the website project only.
+5. Coordinate backend dependencies instead of implementing them yourself.
+6. Do not invent marketing claims or images.
+7. Do not create unnecessary dependencies or paid services.
+8. Do not change advertised prices or rental policies without approval.
+9. Do not alter live domains or publish production changes without approval.
+10. Test the completed work.
+
+## EXPECTED RESULT
+
+A visually polished, mobile-friendly, search-optimized Revive Event Center website that communicates the venue's genuine advantages and makes it easy for prospective customers to request information or book tours.
+
+## DELIVERABLES
+
+Complete the approved, low-risk frontend improvements in the development environment.
+
+Provide:
+
+1. Summary of changes.
+2. Confirmed problems corrected.
+3. Before-and-after screenshots where practical.
+4. Mobile and desktop test results.
+5. SEO and accessibility findings.
+6. Exact integration requirements for the VenueOS agent.
+7. Items requiring owner approval.
+
+Do not stop after simply generating an audit.
+
+Execute the safe website improvements, test them, and report the results.
+
+Do not publish to production without authorization.

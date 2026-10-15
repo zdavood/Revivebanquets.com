@@ -121,6 +121,7 @@ async function sliceCollage() {
   console.log("Processing newly shared event photos...");
   await fit(SRC.weddingRedSetup, "event-wedding-red-setup.jpg", 2200);
   await fit(SRC.colorfulReceptionSetup, "event-colorful-reception-setup.jpg", 2200);
+  await require("./responsive-photos.cjs").generateResponsivePhotos();
   console.log("Done.");
 })().catch((e) => {
   console.error(e);

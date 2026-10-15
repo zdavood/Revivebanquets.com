@@ -1,0 +1,410 @@
+{
+  "ambiance.jpg": {
+    "width": 2400,
+    "height": 1800,
+    "sources": [
+      {
+        "file": "ambiance-640.webp",
+        "width": 640
+      },
+      {
+        "file": "ambiance-1280.webp",
+        "width": 1280
+      },
+      {
+        "file": "ambiance-1920.webp",
+        "width": 1920
+      }
+    ]
+  },
+  "ballroom-angle.jpg": {
+    "width": 2400,
+    "height": 1800,
+    "sources": [
+      {
+        "file": "ballroom-angle-640.webp",
+        "width": 640
+      },
+      {
+        "file": "ballroom-angle-1280.webp",
+        "width": 1280
+      },
+      {
+        "file": "ballroom-angle-1920.webp",
+        "width": 1920
+      }
+    ]
+  },
+  "ballroom-wide.jpg": {
+    "width": 2400,
+    "height": 1800,
+    "sources": [
+      {
+        "file": "ballroom-wide-640.webp",
+        "width": 640
+      },
+      {
+        "file": "ballroom-wide-1280.webp",
+        "width": 1280
+      },
+      {
+        "file": "ballroom-wide-1920.webp",
+        "width": 1920
+      }
+    ]
+  },
+  "bar.jpg": {
+    "width": 2000,
+    "height": 1500,
+    "sources": [
+      {
+        "file": "bar-640.webp",
+        "width": 640
+      },
+      {
+        "file": "bar-1280.webp",
+        "width": 1280
+      },
+      {
+        "file": "bar-1920.webp",
+        "width": 1920
+      }
+    ]
+  },
+  "catering.jpg": {
+    "width": 2400,
+    "height": 1600,
+    "sources": [
+      {
+        "file": "catering-640.webp",
+        "width": 640
+      },
+      {
+        "file": "catering-1280.webp",
+        "width": 1280
+      },
+      {
+        "file": "catering-1920.webp",
+        "width": 1920
+      }
+    ]
+  },
+  "comedy-performer.jpg": {
+    "width": 1939,
+    "height": 1406,
+    "sources": [
+      {
+        "file": "comedy-performer-640.webp",
+        "width": 640
+      },
+      {
+        "file": "comedy-performer-1280.webp",
+        "width": 1280
+      },
+      {
+        "file": "comedy-performer-1920.webp",
+        "width": 1920
+      }
+    ]
+  },
+  "comedy-red.jpg": {
+    "width": 1939,
+    "height": 1406,
+    "sources": [
+      {
+        "file": "comedy-red-640.webp",
+        "width": 640
+      },
+      {
+        "file": "comedy-red-1280.webp",
+        "width": 1280
+      },
+      {
+        "file": "comedy-red-1920.webp",
+        "width": 1920
+      }
+    ]
+  },
+  "comedy-side.jpg": {
+    "width": 2400,
+    "height": 1800,
+    "sources": [
+      {
+        "file": "comedy-side-640.webp",
+        "width": 640
+      },
+      {
+        "file": "comedy-side-1280.webp",
+        "width": 1280
+      },
+      {
+        "file": "comedy-side-1920.webp",
+        "width": 1920
+      }
+    ]
+  },
+  "comedy-wide.jpg": {
+    "width": 2400,
+    "height": 1800,
+    "sources": [
+      {
+        "file": "comedy-wide-640.webp",
+        "width": 640
+      },
+      {
+        "file": "comedy-wide-1280.webp",
+        "width": 1280
+      },
+      {
+        "file": "comedy-wide-1920.webp",
+        "width": 1920
+      }
+    ]
+  },
+  "cultural-ceremony.jpg": {
+    "width": 1680,
+    "height": 1050,
+    "sources": [
+      {
+        "file": "cultural-ceremony-640.webp",
+        "width": 640
+      },
+      {
+        "file": "cultural-ceremony-1280.webp",
+        "width": 1280
+      },
+      {
+        "file": "cultural-ceremony-1920.webp",
+        "width": 1680
+      }
+    ]
+  },
+  "cultural-dance.jpg": {
+    "width": 1500,
+    "height": 2000,
+    "sources": [
+      {
+        "file": "cultural-dance-640.webp",
+        "width": 640
+      },
+      {
+        "file": "cultural-dance-1280.webp",
+        "width": 1280
+      },
+      {
+        "file": "cultural-dance-1920.webp",
+        "width": 1500
+      }
+    ]
+  },
+  "event-colorful-reception-setup.jpg": {
+    "width": 2200,
+    "height": 1650,
+    "sources": [
+      {
+        "file": "event-colorful-reception-setup-640.webp",
+        "width": 640
+      },
+      {
+        "file": "event-colorful-reception-setup-1280.webp",
+        "width": 1280
+      },
+      {
+        "file": "event-colorful-reception-setup-1920.webp",
+        "width": 1920
+      }
+    ]
+  },
+  "event-wedding-red-setup.jpg": {
+    "width": 2200,
+    "height": 1650,
+    "sources": [
+      {
+        "file": "event-wedding-red-setup-640.webp",
+        "width": 640
+      },
+      {
+        "file": "event-wedding-red-setup-1280.webp",
+        "width": 1280
+      },
+      {
+        "file": "event-wedding-red-setup-1920.webp",
+        "width": 1920
+      }
+    ]
+  },
+  "exterior.jpg": {
+    "width": 1500,
+    "height": 2000,
+    "sources": [
+      {
+        "file": "exterior-640.webp",
+        "width": 640
+      },
+      {
+        "file": "exterior-1280.webp",
+        "width": 1280
+      },
+      {
+        "file": "exterior-1920.webp",
+        "width": 1500
+      }
+    ]
+  },
+  "scale-angle.jpg": {
+    "width": 2400,
+    "height": 1800,
+    "sources": [
+      {
+        "file": "scale-angle-640.webp",
+        "width": 640
+      },
+      {
+        "file": "scale-angle-1280.webp",
+        "width": 1280
+      },
+      {
+        "file": "scale-angle-1920.webp",
+        "width": 1920
+      }
+    ]
+  },
+  "scale-front.jpg": {
+    "width": 2400,
+    "height": 1800,
+    "sources": [
+      {
+        "file": "scale-front-640.webp",
+        "width": 640
+      },
+      {
+        "file": "scale-front-1280.webp",
+        "width": 1280
+      },
+      {
+        "file": "scale-front-1920.webp",
+        "width": 1920
+      }
+    ]
+  },
+  "scale-rear.jpg": {
+    "width": 2400,
+    "height": 1800,
+    "sources": [
+      {
+        "file": "scale-rear-640.webp",
+        "width": 640
+      },
+      {
+        "file": "scale-rear-1280.webp",
+        "width": 1280
+      },
+      {
+        "file": "scale-rear-1920.webp",
+        "width": 1920
+      }
+    ]
+  },
+  "scale-side.jpg": {
+    "width": 2400,
+    "height": 1800,
+    "sources": [
+      {
+        "file": "scale-side-640.webp",
+        "width": 640
+      },
+      {
+        "file": "scale-side-1280.webp",
+        "width": 1280
+      },
+      {
+        "file": "scale-side-1920.webp",
+        "width": 1920
+      }
+    ]
+  },
+  "setup-blush.jpg": {
+    "width": 1200,
+    "height": 1200,
+    "sources": [
+      {
+        "file": "setup-blush-640.webp",
+        "width": 640
+      },
+      {
+        "file": "setup-blush-1280.webp",
+        "width": 1200
+      }
+    ]
+  },
+  "setup-burgundy.jpg": {
+    "width": 1200,
+    "height": 1200,
+    "sources": [
+      {
+        "file": "setup-burgundy-640.webp",
+        "width": 640
+      },
+      {
+        "file": "setup-burgundy-1280.webp",
+        "width": 1200
+      }
+    ]
+  },
+  "setup-garden.jpg": {
+    "width": 1200,
+    "height": 1200,
+    "sources": [
+      {
+        "file": "setup-garden-640.webp",
+        "width": 640
+      },
+      {
+        "file": "setup-garden-1280.webp",
+        "width": 1200
+      }
+    ]
+  },
+  "setup-greenery.jpg": {
+    "width": 1200,
+    "height": 1200,
+    "sources": [
+      {
+        "file": "setup-greenery-640.webp",
+        "width": 640
+      },
+      {
+        "file": "setup-greenery-1280.webp",
+        "width": 1200
+      }
+    ]
+  },
+  "setup-navy.jpg": {
+    "width": 1200,
+    "height": 1200,
+    "sources": [
+      {
+        "file": "setup-navy-640.webp",
+        "width": 640
+      },
+      {
+        "file": "setup-navy-1280.webp",
+        "width": 1200
+      }
+    ]
+  },
+  "setup-teal.jpg": {
+    "width": 1200,
+    "height": 1200,
+    "sources": [
+      {
+        "file": "setup-teal-640.webp",
+        "width": 640
+      },
+      {
+        "file": "setup-teal-1280.webp",
+        "width": 1200
+      }
+    ]
+  }
+}

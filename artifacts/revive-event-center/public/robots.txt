@@ -2,4 +2,4 @@ User-agent: *
 Allow: /
 Disallow:
 
-Sitemap: https://reviveeventcenter.com/sitemap.xml
+Sitemap: https://revive-event-hub.replit.app/sitemap.xml

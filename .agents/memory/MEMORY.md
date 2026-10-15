@@ -1,0 +1,1 @@
+- [Website scope](website-scope.md) — public-site work must preserve the separate VenueOS integration owner's responsibilities and require approval before publishing or domain changes.

@@ -6,81 +6,109 @@ id = "R7z0NWZQ384xy7BuQghWe"
 uri = "file://artifacts/revive-event-center/public/revive-photos/hero.jpg"
 type = "image"
 title = "luxury ballroom interior golden hour lighting"
+logical_id = "c31a9b7d-498f-4a8a-9bce-d49c3fd2e0b6"
 
 [[outputs]]
 id = "GPl1dTPK_2kaNcLjsmNTe"
 uri = "file://artifacts/revive-event-center/public/revive-photos/ballroom.jpg"
 type = "image"
 title = "elegant ballroom interior with chandeliers and golden uplighting"
+logical_id = "7ae3d2ed-ae5c-4952-af62-9b53065d58bb"
 
 [[outputs]]
 id = "okpLkxBjY3RHIKYMngMfT"
 uri = "file://artifacts/revive-event-center/public/revive-photos/wedding.jpg"
 type = "image"
 title = "upscale elegant wedding reception table setting"
+logical_id = "c7efe5c5-8568-44d4-a333-39c286b300ef"
 
 [[outputs]]
 id = "9YCo_JdZDuHexiInojI15"
 uri = "file://artifacts/revive-event-center/public/revive-photos/quinceanera.jpg"
 type = "image"
 title = "quinceanera elegant celebration dress"
+logical_id = "1ac1503d-57b4-4ae4-9956-9e312c9b2592"
 
 [[outputs]]
 id = "61Wmqwzq6dpGoJuQ6TYbV"
 uri = "file://artifacts/revive-event-center/public/revive-photos/corporate.jpg"
 type = "image"
 title = "corporate gala event ballroom stage"
+logical_id = "90ef1cbe-75a3-428d-8546-395f1995972b"
 
 [[outputs]]
 id = "5_qb34xAcVxPBkUw36aKr"
 uri = "file://artifacts/revive-event-center/public/revive-photos/concert.jpg"
 type = "image"
 title = "live concert event lighting stage"
+logical_id = "b8709b77-d300-41fd-9360-2d00f01bca78"
 
 [[outputs]]
 id = "GetCNmKQu-j1cLRuIQVg0"
 uri = "file://artifacts/revive-event-center/public/revive-photos/holiday.jpg"
 type = "image"
 title = "holiday party elegant celebration"
+logical_id = "5eee1891-4454-48aa-aecc-3d220922343e"
 
 [[outputs]]
 id = "GqBPQfvCXAO-HnUAucmps"
 uri = "file://artifacts/revive-event-center/public/revive-photos/package.jpg"
 type = "image"
 title = "elegant catered food event plating"
+logical_id = "6da27734-600f-4f83-ad77-bf15c420e011"
 
 [[outputs]]
 id = "t6kCSu2_5snqhneCGOt74"
 uri = "file://artifacts/revive-event-center/public/revive-photos/prom.jpg"
 type = "image"
 title = "prom celebration dancing"
+logical_id = "ebd46322-405f-4f95-a3ef-4ebf180734bf"
 
 [[outputs]]
 id = "oKrywbI5oUnsOJGi89GKd"
 uri = "file://artifacts/revive-event-center/public/revive-photos/birthday.jpg"
 type = "image"
 title = "birthday party celebration elegant"
+logical_id = "c17df46d-0ac5-41a5-a6ca-a2439e1130e8"
 
 [[outputs]]
 id = "zn97hpczGriuUZAdeax-b"
 uri = "file://artifacts/revive-event-center/public/revive-photos/fundraiser.jpg"
 type = "image"
 title = "fundraiser elegant dinner"
+logical_id = "893b649c-7eb3-4805-b48e-ecb9dd6665ee"
 
 [[outputs]]
 id = "KjwD3aPJFv4kwzGCznsbC"
 uri = "file://artifacts/revive-event-center/public/revive-photos/anniversary.jpg"
 type = "image"
 title = "anniversary celebration elegant table"
+logical_id = "6d530f81-148d-496b-8f17-9d7a73039ad8"
 
 [[outputs]]
 id = "fySpBZVYPSbw1jBNhOKwy"
 uri = "file://artifacts/revive-event-center/public/revive-photos/memorial.jpg"
 type = "image"
 title = "memorial service beautiful arrangement"
+logical_id = "28316ebe-1a04-4d5a-abd9-882a9fb03264"
 
 [[outputs]]
 id = "S2frZaNx-DfcuDHskN1QO"
 uri = "file://artifacts/revive-event-center/public/revive-photos/exterior.jpg"
 type = "image"
 title = "golden hour ballroom exterior"
+logical_id = "3e8acfba-a5ed-475a-8614-a1007fc9cdad"
+
+[[outputs]]
+id = "LexfBoDkpn_iD2URTHNiP"
+uri = "file://generated-artifacts/revive-website-review.html"
+type = "html"
+title = "Revive Website Review & VenueOS Handoff"
+description = "Before-and-after screenshots, completed changes, browser test results, SEO/accessibility findings, approval items, and exact VenueOS integration requirements."
+logical_id = "902d9ee5-6a77-472e-9688-c943b68a23ac"
+content_hash = "sha256:622ac6ed68f6f44822dfb1c3ff890ee265606adea4b8b067e78e54bb3bde4571"
+size = 444184
+mtime_ms = 1792090212661
+storage_uri = "gcs://replit-rams-assets-worf/rams/assets/repl:88283291-fe3b-48e7-a7a5-28b31dd831cf/902d9ee5-6a77-472e-9688-c943b68a23ac/378aca5d-d255-4f0b-9fe0-85c56b3bf647"
+storage_version_token = "1792090228669667"
+content_type = "text/html"
