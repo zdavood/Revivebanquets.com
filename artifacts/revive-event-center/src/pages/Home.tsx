@@ -6,9 +6,9 @@ import { Button } from "@/components/ui/button";
 import { VenueImage } from "@/components/VenueImage";
 import { MobileSectionNav, SECTION_LINKS } from "@/components/SectionNav";
 import { VenueFaq } from "@/components/VenueFaq";
+import { venueOsUrl } from "@/content/venueos";
 
-const VENUESOS_TOUR = "https://venuesos.com/schedule-tour";
-const VENUESOS_INQUIRY = "https://venuesos.com/inquiry";
+const VENUESOS_TOUR = venueOsUrl("tour");
 const TEL_HREF = "tel:+12096001502";
 const PHONE_DISPLAY = "Call (209) 600-1502";
 const INSTAGRAM_URL = "https://instagram.com/revive_banquet_hall";
@@ -36,6 +36,10 @@ function handleDirectionsClick(event: MouseEvent<HTMLAnchorElement>) {
 }
 
 export default function Home() {
+  const VENUESOS_INQUIRY = venueOsUrl(
+    "inquiry",
+    typeof window === "undefined" ? "" : window.location.search,
+  );
   const [copyStatus, setCopyStatus] = useState<"idle" | "copied" | "failed">("idle");
 
   const handleCopyAddress = async () => {
