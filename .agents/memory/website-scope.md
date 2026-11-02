@@ -31,3 +31,9 @@ Keep inquiry response timing vague: the team responds fast, but the owner does n
 **Why:** The owner explicitly requested general wording rather than a response-time commitment.
 
 **How to apply:** Say the team will follow up about event details, availability and next steps. Do not add a numerical deadline or ask for one in future content updates.
+
+Keep Revive's positioning broad rather than singling out South Asian or any other community.
+
+**Why:** The owner rejected that emphasis in the hero and clarified that Revive should not focus on a particular community. This supersedes the earlier brief's community-specific examples.
+
+**How to apply:** Use general event wording such as weddings, celebrations and corporate events. Preserve actual event photos without presenting Revive as a venue for a particular ethnicity.

@@ -127,7 +127,7 @@ export default function Home() {
               <motion.p variants={fadeInUp} className="text-sm text-white/80 [text-shadow:0_1px_12px_rgba(0,0,0,0.6)]">Seated capacity depends on your layout, dance floor, and staging.</motion.p>
 
               <motion.p variants={fadeInUp} className="text-lg md:text-xl text-white/90 max-w-2xl mx-auto font-light leading-relaxed [text-shadow:0_1px_20px_rgba(0,0,0,0.5)]">
-                One welcoming Merced ballroom for weddings, quinceañeras, South Asian and other cultural celebrations, and corporate events. Explore the space on a tour.
+                A Merced ballroom for weddings, celebrations, and corporate events. Explore the space on a tour.
               </motion.p>
               
               <motion.div variants={fadeInUp} className="flex flex-col sm:flex-row items-center justify-center gap-4 pt-8 w-full max-w-md mx-auto sm:max-w-none">
@@ -325,10 +325,10 @@ export default function Home() {
                 },
                 {
                   eyebrow: "02",
-                  title: "South Asian & Cultural Celebrations",
+                  title: "Celebrations & Receptions",
                   image: images.cultural,
-                  desc: "Mehndi, sangeet, baraat, and receptions — an open floor and grand chandeliers ready for every tradition.",
-                  alt: "Guests in colorful lehengas dancing on the white dance floor beneath a crystal chandelier at a South Asian wedding at Revive",
+                  desc: "An open dance floor and grand chandeliers for gathering, dining, and celebrating together.",
+                  alt: "Guests dancing on the white dance floor beneath a crystal chandelier at Revive",
                 },
                 {
                   eyebrow: "03",
