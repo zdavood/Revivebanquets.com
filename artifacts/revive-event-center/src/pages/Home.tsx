@@ -6,6 +6,7 @@ import { Button } from "@/components/ui/button";
 import { VenueImage } from "@/components/VenueImage";
 import { MobileSectionNav, SECTION_LINKS } from "@/components/SectionNav";
 import { VenueFaq } from "@/components/VenueFaq";
+import { OptionalServices } from "@/components/OptionalServices";
 import { venueOsUrl } from "@/content/venueos";
 
 const VENUESOS_TOUR = venueOsUrl("tour");
@@ -123,9 +124,10 @@ export default function Home() {
                 <span className="text-primary" aria-hidden="true">·</span>
                 <span>Now Accepting Reservations</span>
               </motion.div>
+              <motion.p variants={fadeInUp} className="text-sm text-white/80 [text-shadow:0_1px_12px_rgba(0,0,0,0.6)]">Seated capacity depends on your layout, dance floor, and staging.</motion.p>
 
               <motion.p variants={fadeInUp} className="text-lg md:text-xl text-white/90 max-w-2xl mx-auto font-light leading-relaxed [text-shadow:0_1px_20px_rgba(0,0,0,0.5)]">
-                Bring your wedding, quinceañera, corporate event, or cultural celebration to our Merced ballroom. Explore the space on a tour.
+                One welcoming Merced ballroom for weddings, quinceañeras, South Asian and other cultural celebrations, and corporate events. Explore the space on a tour.
               </motion.p>
               
               <motion.div variants={fadeInUp} className="flex flex-col sm:flex-row items-center justify-center gap-4 pt-8 w-full max-w-md mx-auto sm:max-w-none">
@@ -141,7 +143,7 @@ export default function Home() {
                 </Button>
               </motion.div>
               <motion.p variants={fadeInUp} className="text-sm text-white/85 [text-shadow:0_1px_12px_rgba(0,0,0,0.6)]">
-                Tour and inquiry open on VenueSOS in a new tab. Prefer to talk? <a href={TEL_HREF} data-conversion-action="phone_click" className="underline underline-offset-4 font-medium text-white">Call (209) 600-1502</a>
+                Tour and inquiry open Revive’s booking form in a new tab. Prefer to talk? <a href={TEL_HREF} data-conversion-action="phone_click" className="underline underline-offset-4 font-medium text-white">Call (209) 600-1502</a>
               </motion.p>
             </motion.div>
           </div>
@@ -174,16 +176,17 @@ export default function Home() {
           <div className="max-w-7xl mx-auto px-6">
             <div className="text-center max-w-3xl mx-auto mb-16">
               <h2 className="text-4xl md:text-5xl font-serif font-medium mb-6">Why Families and Planners Choose Revive</h2>
-              <p className="text-lg text-muted-foreground">One indoor ballroom, room for up to 350 seated guests, and layouts that adapt to your event. What your rental includes is spelled out in your proposal.</p>
+              <p className="text-lg text-muted-foreground">One indoor ballroom, room for up to 350 seated guests, and layouts that adapt to your event. Seated capacity depends on tables, dance floor, and staging. What your rental includes is spelled out in your proposal.</p>
             </div>
 
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
               {[
                 { icon: Star, title: "Indoor Ballroom", desc: "Chandeliers and programmable lighting in a single open indoor room." },
-                { icon: Users, title: "Up to 350 Seated", desc: "Room for large celebrations, with layouts sized to your actual guest count." },
+                { icon: Users, title: "Up to 350 Seated", desc: "Layout-dependent: actual seated capacity varies with tables, dance floor, and staging." },
+                { icon: BookOpen, title: "About 5,000 sq ft Banquet Area", desc: "The main banquet area is approximately 50 ft x 100 ft. The bar, restrooms, and prep kitchen are separate from these dimensions." },
                 { icon: MapPin, title: "Central Merced Location", desc: "443 West 18th Street, Merced, CA 95340." },
                 { icon: CheckCircle2, title: "Flexible Layouts", desc: "Round tables, banquet rows, dance floor, and stage arrangements to discuss on your tour." },
-                { icon: GlassWater, title: "Kitchen, Bar & Staffing", desc: "Prep kitchen, bar, catering, and staffing options are worth discussing with our team. They are not guaranteed to be included." },
+                { icon: GlassWater, title: "Optional Services", desc: "Photo booths, staffing, catering through preferred partners, and hosted bar options are available, never automatically included." },
                 { icon: BookOpen, title: "Clear Proposal", desc: "Rental inclusions and optional services are confirmed in writing in your proposal before you commit." },
                 { icon: PartyPopper, title: "Built for Every Celebration", desc: "Weddings, quinceañeras, corporate events, cultural celebrations, and private celebrations." }
               ].map((feature, i) => (
@@ -220,7 +223,7 @@ export default function Home() {
                 {
                   image: images.bar,
                   title: "The Bar",
-                  desc: "A granite-topped service bar with lit displays. Bar service arrangements are discussed in your proposal.",
+                  desc: "A granite-topped service bar with lit displays. Hosted bar options are optional and confirmed in your proposal.",
                   alt: "Granite-topped service bar with backlit wine and liquor display inside Revive Event Center",
                 },
                 {
@@ -276,12 +279,13 @@ export default function Home() {
             >
               <span className="text-primary text-sm font-semibold uppercase tracking-[0.25em]">See the Scale</span>
               <h2 className="text-4xl md:text-5xl lg:text-6xl font-serif font-medium leading-[1.05] [text-shadow:0_2px_30px_rgba(0,0,0,0.5)]">
-                Seats up to 350. <br className="hidden md:block" />
+                Seats up to 350.* <br className="hidden md:block" />
                 Setup for any vision.
               </h2>
               <p className="text-lg text-white/90 leading-relaxed [text-shadow:0_1px_20px_rgba(0,0,0,0.5)]">
                 Round tables, banquet rows, dance floors, and stages with drape backdrops. Walk the open floor with us and talk through the layout your event needs.
               </p>
+              <p className="text-sm text-white/80">*Seated capacity depends on layout. Main banquet area approx. 50 ft x 100 ft (about 5,000 sq ft), not including the separate bar, restrooms, and prep kitchen.</p>
               <div className="flex flex-col sm:flex-row gap-4 pt-2">
                 <Button asChild size="lg" className="bg-primary text-primary-foreground hover:bg-primary/90 h-14 px-8 shadow-lg">
                   <a href={VENUESOS_TOUR} data-conversion-action="tour_click" target="_blank" rel="noopener noreferrer">
@@ -302,7 +306,8 @@ export default function Home() {
             <div className="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-6">
               <div className="max-w-2xl">
                 <h2 className="text-4xl md:text-5xl font-serif font-medium mb-6">Celebrations We Host</h2>
-                <p className="text-lg text-muted-foreground">Weddings, quinceañeras, corporate events, cultural celebrations, and private celebrations. These photos are from events and setups at Revive.</p>
+                <p className="text-lg text-muted-foreground">Weddings, quinceañeras, corporate events, cultural celebrations, and private celebrations. These photos are from real events and setups at Revive.</p>
+                <p className="mt-3 text-sm text-muted-foreground">Pictured décor and event setups were arranged for individual events and are not automatically included with the rental.</p>
               </div>
               <Button asChild variant="outline" className="shrink-0 hidden md:flex">
                 <a href={VENUESOS_INQUIRY} data-conversion-action="inquiry_click" target="_blank" rel="noopener noreferrer">Send an Inquiry</a>
@@ -320,7 +325,7 @@ export default function Home() {
                 },
                 {
                   eyebrow: "02",
-                  title: "Cultural & Multicultural Weddings",
+                  title: "South Asian & Cultural Celebrations",
                   image: images.cultural,
                   desc: "Mehndi, sangeet, baraat, and receptions — an open floor and grand chandeliers ready for every tradition.",
                   alt: "Guests in colorful lehengas dancing on the white dance floor beneath a crystal chandelier at a South Asian wedding at Revive",
@@ -382,6 +387,8 @@ export default function Home() {
           </div>
         </section>
 
+        <OptionalServices />
+
         {/* RESERVATIONS */}
         <section className="py-20 md:py-28 bg-card border-y border-border">
           <div className="max-w-7xl mx-auto px-6">
@@ -394,7 +401,7 @@ export default function Home() {
                   Planning a date? Start with a conversation.
                 </motion.h2>
                 <motion.p variants={fadeInUp} className="text-lg text-muted-foreground leading-relaxed">
-                  Share your preferred date, guest count, and event type. Our team will talk through availability and send a proposal that confirms rental inclusions and any optional services, such as catering or staffing, before you sign anything.
+                  Share your preferred date, guest count, and event type. Our team will talk through availability and send a proposal that confirms rental inclusions and any optional services, such as catering or staffing, before you sign anything. No date yet? Call (209) 600-1502 and we can talk through your plans.
                 </motion.p>
                 <motion.div variants={fadeInUp} className="flex flex-col sm:flex-row gap-4 pt-2">
                   <Button asChild size="lg" className="bg-primary text-primary-foreground hover:bg-primary/90 h-14 px-8 shadow-lg shadow-primary/20">
@@ -468,7 +475,7 @@ export default function Home() {
               <h2 className="text-4xl md:text-5xl font-serif font-medium mb-6">Ready to Revive Your Event?</h2>
               <p className="text-lg text-muted-foreground">Seeing the room in person is the best first step. If you are not ready to tour, send an inquiry with your event details.</p>
               <p className="mt-4 text-sm md:text-[15px] text-muted-foreground">
-                Both buttons open our VenueSOS pages in a new tab, where you complete the request. Submitting there is not a confirmed reservation; our team follows up to confirm. If either page does not load, call (209) 600-1502 or email bookings@revivebanquets.com.
+                Both buttons open Revive’s booking form in a new tab. Submitting is not a confirmed reservation; our team follows up about your details, availability, and a proposal. If no tour time shown works for you, or you don’t have a date yet, call (209) 600-1502 or send an inquiry. If either page does not load, call (209) 600-1502 or email bookings@revivebanquets.com.
               </p>
             </div>
 
@@ -486,7 +493,7 @@ export default function Home() {
                 </div>
                 <h3 className="text-2xl md:text-[26px] font-serif font-medium mb-3">Schedule a Tour</h3>
                 <p className="text-muted-foreground leading-relaxed mb-8">
-                  Choose a time on VenueSOS and walk the ballroom in person to see layouts and lighting and ask your questions.
+                  Choose from the available times on Revive’s booking form and walk the ballroom in person to see layouts and lighting and ask your questions.
                 </p>
                 <div className="mt-auto inline-flex items-center gap-2 text-ink-gold font-semibold">
                   Schedule a Tour <ExternalLink className="w-4 h-4" aria-hidden="true" /><span className="sr-only">(opens in a new tab)</span>
@@ -506,7 +513,7 @@ export default function Home() {
                 </div>
                 <h3 className="text-2xl md:text-[26px] font-serif font-medium mb-3">Send an Inquiry</h3>
                 <p className="text-muted-foreground leading-relaxed mb-8">
-                  Share your date, guest count, and event type on VenueSOS. Our team follows up about availability and a proposal.
+                  Share your date, guest count, and event type. Our team follows up about your details, availability, and a proposal.
                 </p>
                 <div className="mt-auto inline-flex items-center gap-2 text-ink-gold font-semibold">
                   Send an Inquiry <ExternalLink className="w-4 h-4" aria-hidden="true" /><span className="sr-only">(opens in a new tab)</span>

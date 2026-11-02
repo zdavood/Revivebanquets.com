@@ -5,6 +5,7 @@ import { Sheet, SheetClose, SheetContent, SheetDescription, SheetTitle, SheetTri
 export const SECTION_LINKS = [
   { href: "#venue", label: "The Venue" },
   { href: "#celebrations", label: "Celebrations" },
+  { href: "#services", label: "Optional Services" },
   { href: "#how-it-works", label: "How Booking Works" },
   { href: "#faq", label: "FAQ" },
   { href: "#find-us", label: "Find Us" },

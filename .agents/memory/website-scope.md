@@ -13,3 +13,15 @@ For VenueOS handoffs, never guess a tenant identifier or treat a generic calenda
 **Why:** The owner's integration brief explains that missing tenant resolution previously appeared as “no openings,” and VenueOS development fixes may not yet be published.
 
 **How to apply:** Keep production verification read-only: no test bookings, inquiries, customer emails or configuration changes. Check the hosted page identifies Revive and preserves the venue when switching options. Publication still requires separate approval.
+
+Owner-confirmed venue facts: Revive is one indoor ballroom. The main banquet area is approximately 50 feet by 100 feet (about 5,000 square feet). Separate bar, bathroom and prep-kitchen areas are outside those dimensions. Never describe that figure as total venue size or use those separate areas to increase the 350-person seated capacity. Actual capacity depends on tables, dance floor and staging.
+
+**Why:** The owner explicitly clarified the measurement's scope and capacity limits.
+
+**How to apply:** Keep these distinctions in public copy, metadata, proposals and future layout descriptions.
+
+Optional offerings confirmed by the owner: photo booth rentals, event staffing, catering through preferred partners, and hosted bar options. Availability and details belong in the event proposal; none are automatically included in base rental. No valet parking. No public prices, price ranges, dollar amounts, internal catalog labels, provider/vendor names, costs or staffing-source details.
+
+**Why:** The owner supplied these business and disclosure rules and said the old website is being retired; stale claims from it must not be reused.
+
+**How to apply:** Use customer-facing descriptions and actual Revive photos without implying pictured décor is included. The owner changed the VenueOS tour window to 14 days, but public availability must remain driven by the live scheduler, not a fixed marketing promise. Never invent an inquiry response-time commitment.
