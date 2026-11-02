@@ -127,7 +127,7 @@ export default function Home() {
               <motion.p variants={fadeInUp} className="text-sm text-white/80 [text-shadow:0_1px_12px_rgba(0,0,0,0.6)]">Seated capacity depends on your layout, dance floor, and staging.</motion.p>
 
               <motion.p variants={fadeInUp} className="text-lg md:text-xl text-white/90 max-w-2xl mx-auto font-light leading-relaxed [text-shadow:0_1px_20px_rgba(0,0,0,0.5)]">
-                A Merced ballroom for weddings, celebrations, and corporate events. Explore the space on a tour.
+                A 5,000-square-foot Merced ballroom for weddings, quinceañeras, receptions, and large celebrations. Book a tour.
               </motion.p>
               
               <motion.div variants={fadeInUp} className="flex flex-col sm:flex-row items-center justify-center gap-4 pt-8 w-full max-w-md mx-auto sm:max-w-none">
