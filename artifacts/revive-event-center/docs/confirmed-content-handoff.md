@@ -13,7 +13,7 @@
 2. **No date yet:** The current public inquiry page says “Choose a date first.” Its inspected inquiry code has no confirmed date-undecided option. Add an optional-date path in VenueOS if supported by its inquiry model; do not invent dates or reservations. Until then the website offers a call for planning without a date.
 3. **No public pricing:** The hosted inquiry code still contains “Event Details & Pricing” and an “instant starting-price range estimate” description. Remove customer-facing prices, ranges and internal catalog/provider details in VenueOS too. These are separate from this website's source. No later form steps were submitted or tested.
 4. **Tour scheduling:** Keep the owner's 14-day configuration authoritative. Only return eligible dates and slots from the scheduler. The website makes no static window promise and offers call/inquiry alternatives.
-5. **Follow-up expectations:** The owner must confirm a reliable response timeframe before a numerical promise is added to the website or inquiry confirmation. Ensure confirmation accurately describes what follows a saved inquiry.
+5. **Follow-up expectations:** The owner wants general wording, not an exact response-time promise. Say the team will follow up about event details, availability and next steps. Do not add a numerical deadline. Ensure confirmation accurately describes what follows a saved inquiry.
 
 ## Domain / retired website
 - Deployment lookup lists only https://revive-event-hub.replit.app, with no additional URLs.

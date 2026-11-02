@@ -25,3 +25,9 @@ Optional offerings confirmed by the owner: photo booth rentals, event staffing, 
 **Why:** The owner supplied these business and disclosure rules and said the old website is being retired; stale claims from it must not be reused.
 
 **How to apply:** Use customer-facing descriptions and actual Revive photos without implying pictured décor is included. The owner changed the VenueOS tour window to 14 days, but public availability must remain driven by the live scheduler, not a fixed marketing promise. Never invent an inquiry response-time commitment.
+
+Keep inquiry response timing vague: the team responds fast, but the owner does not want to promise an exact time.
+
+**Why:** The owner explicitly requested general wording rather than a response-time commitment.
+
+**How to apply:** Say the team will follow up about event details, availability and next steps. Do not add a numerical deadline or ask for one in future content updates.
