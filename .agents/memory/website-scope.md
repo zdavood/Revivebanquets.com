@@ -37,3 +37,9 @@ Keep Revive's positioning broad rather than singling out South Asian or any othe
 **Why:** The owner rejected that emphasis in the hero and clarified that Revive should not focus on a particular community. This supersedes the earlier brief's community-specific examples.
 
 **How to apply:** Use general event wording such as weddings, celebrations and corporate events. Preserve actual event photos without presenting Revive as a venue for a particular ethnicity.
+
+Use only real photos of Revive on the site. Never use AI-generated, stock or styled "concept" images (the six setup-* collage tiles and the Marketing graphics in the owner's Media folder are AI renders and must not be used). The public domain is https://revivebanquets.com.
+
+**Why:** The Nov 2026 audit found the hero and a card showed AI renders of a different room, and the owner asked for AI images to be removed.
+
+**How to apply:** Add photos only via scripts/process_photos.py from camera originals; keep alt text accurate (scale-* shots have navy banquet chairs, not chiavari).

@@ -263,8 +263,11 @@ html { scroll-behavior: smooth; scroll-padding-top: 6rem; scroll-padding-bottom:
 .text-ink-gold { color: hsl(var(--primary-ink)); }
 .text-ink-gold\/40 { color: hsl(var(--primary-ink) / 0.4); }
 .hover\:text-ink-gold:hover { color: hsl(var(--primary-ink)); }
+/* Two-tone focus ring: cream inner ring shows on dark photos and sections,
+   gold-brown outer ring shows on cream. Meets 3:1 on both. */
 :where(a, button, [role="button"], summary, [tabindex]):focus-visible {
   outline: 3px solid hsl(var(--primary-ink)); outline-offset: 3px; border-radius: 4px;
+  box-shadow: 0 0 0 3px hsl(45 40% 98%);
 }
 .skip-link {
   position: fixed; left: 1rem; top: 0.75rem; z-index: 100; transform: translateY(-200%);

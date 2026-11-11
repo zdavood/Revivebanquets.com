@@ -1,5 +1,4 @@
 User-agent: *
 Allow: /
-Disallow:
 
-Sitemap: https://revive-event-hub.replit.app/sitemap.xml
+Sitemap: https://revivebanquets.com/sitemap.xml

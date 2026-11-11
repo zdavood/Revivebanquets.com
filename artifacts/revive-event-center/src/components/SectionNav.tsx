@@ -1,18 +1,20 @@
 import { useState } from "react";
 import { Menu } from "lucide-react";
 import { Sheet, SheetClose, SheetContent, SheetDescription, SheetTitle, SheetTrigger } from "@/components/ui/sheet";
+import { TEL_HREF, VENUE } from "@/content/site";
 
 export const SECTION_LINKS = [
-  { href: "#venue", label: "The Venue" },
   { href: "#celebrations", label: "Celebrations" },
-  { href: "#services", label: "Optional Services" },
-  { href: "#how-it-works", label: "How Booking Works" },
+  { href: "#venue", label: "The Room" },
+  { href: "#gallery", label: "Gallery" },
+  { href: "#services", label: "Services" },
+  { href: "#book", label: "Plan Your Event" },
   { href: "#faq", label: "FAQ" },
   { href: "#find-us", label: "Find Us" },
 ] as const;
 
 /** Mobile/tablet section menu. Radix Dialog handles focus trap, Escape, and focus return. */
-export function MobileSectionNav({ tourUrl, telHref }: { tourUrl: string; telHref: string }) {
+export function MobileSectionNav({ tourUrl }: { tourUrl: string }) {
   const [open, setOpen] = useState(false);
   return (
     <Sheet open={open} onOpenChange={setOpen}>
@@ -39,12 +41,12 @@ export function MobileSectionNav({ tourUrl, telHref }: { tourUrl: string; telHre
             ))}
           </ul>
         </nav>
-        <div className="mt-auto flex flex-col gap-3 pt-6">
+        <div className="mt-auto flex flex-col gap-3 pt-6" data-track-section="menu">
           <a href={tourUrl} data-conversion-action="tour_click" target="_blank" rel="noopener noreferrer" className="h-12 inline-flex items-center justify-center rounded-md bg-primary text-primary-foreground font-semibold" data-testid="link-menu-tour">
-            Schedule a Tour
+            Schedule a Tour<span className="sr-only"> (opens in a new tab)</span>
           </a>
-          <a href={telHref} data-conversion-action="phone_click" className="h-12 inline-flex items-center justify-center rounded-md border border-border font-medium" data-testid="link-menu-call">
-            Call (209) 600-1502
+          <a href={TEL_HREF} data-conversion-action="phone_click" className="h-12 inline-flex items-center justify-center rounded-md border border-border font-medium" data-testid="link-menu-call">
+            Call {VENUE.phoneDisplay}
           </a>
         </div>
       </SheetContent>
