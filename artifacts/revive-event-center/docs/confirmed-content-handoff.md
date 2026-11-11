@@ -22,7 +22,7 @@
 - Unknown addresses now return "not found" (`public/404.html`); the catch-all rewrite was removed.
 
 ## Tracking
-- Set `VITE_GA_MEASUREMENT_ID` (GA4, `G-...`) or `VITE_PLAUSIBLE_DOMAIN` and redeploy. One listener reports every element with `data-conversion-action` (`tour_click`, `inquiry_click`, `phone_click`, `email_click`, `directions_click`, `social_click`, `review_click`, plus `gallery_open` / `gallery_filter`) with the page section it came from.
+- Google Analytics 4 is connected: account "Revive Event Center", property "revivebanquets.com", stream "Revive website", Measurement ID `G-QJPYPRDDP0` (owned by bookings@revivebanquets.com). It's the default in `src/lib/analytics.ts`; `VITE_GA_MEASUREMENT_ID` / `VITE_PLAUSIBLE_DOMAIN` can override or add. One listener reports every element with `data-conversion-action` (`tour_click`, `inquiry_click`, `phone_click`, `email_click`, `directions_click`, `social_click`, `review_click`, plus `gallery_open` / `gallery_filter`) with the page section it came from.
 - Tour, inquiry and consultation links all carry the venue code and pass through `utm_*` campaign tags.
 
 ## Reviews
