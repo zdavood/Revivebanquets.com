@@ -3,7 +3,7 @@ import dimensions from "@/content/photo-dimensions.json";
 
 const photos: Record<string, { width: number; height: number; sources: { file: string; width: number }[] }> = dimensions;
 
-/** "/revive-photos/setup-blush.jpg" -> "/revive-photos/setup-blush-640.webp 640w, ..." (base path preserved) */
+/** "/revive-photos/bar.jpg" -> "/revive-photos/bar-640.webp 640w, ..." (base path preserved) */
 export function deriveSrcSet(src: string): string | undefined {
   const file = src.split("/").pop() ?? "";
   const photo = photos[file];

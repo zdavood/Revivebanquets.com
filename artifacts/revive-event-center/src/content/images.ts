@@ -1,162 +1,97 @@
 /**
- * Revive Event Center Images
+ * Every photo on the site comes from this file.
  *
- * Every image URL on the site comes from this file.
- * The site now ships with the real Revive Event Center photo set in
- * public/revive-photos/ — wide ballroom shots, the exterior storefront,
- * artisan catering, and six fully-styled event setups (blush, navy,
- * garden, greenery, burgundy, teal). To swap in additional or updated
- * photos later, drop a file into public/revive-photos/ and replace the
- * URL below with its path, e.g. "/revive-photos/my-photo.jpg".
+ * All photos are real, taken at Revive Event Center (443 W. 18th Street,
+ * Merced). Do not add stock, AI-generated or styled "concept" images, and do
+ * not present décor as included with the rental.
  *
- * The Recent Events gallery is driven by the recentEventsGallery array —
- * edit each entry's image / caption / alt to swap photos.
+ * To add a photo: put the original in attached_assets/, add it to
+ * scripts/process_photos.py, run `python3 scripts/process_photos.py`, then
+ * reference "/revive-photos/<name>.jpg" below.
  */
 
-export interface GalleryItem {
-  id: string;
-  image: string;
-  alt: string;
-  caption?: string;
-  eventType?: string;
-}
+const P = (name: string) => `/revive-photos/${name}.jpg`;
 
 export const images = {
-  // Real venue interior + exterior + catering
-  hero: "/revive-photos/setup-blush.jpg",
-  ballroom: "/revive-photos/ballroom-angle.jpg",
-  exterior: "/revive-photos/exterior.jpg",
-  package: "/revive-photos/catering.jpg",
-
-  // Wide blue-uplit setup shots that demonstrate the venue's true scale —
-  // rows of round tables, chiavari chairs, signature LED ceiling halo.
-  scaleFront: "/revive-photos/scale-front.jpg",
-  scaleSide: "/revive-photos/scale-side.jpg",
-  scaleAngle: "/revive-photos/scale-angle.jpg",
-  scaleRear: "/revive-photos/scale-rear.jpg",
-
-  // Comedy night — proves the concert/performance/show use case with
-  // real stage, audience, and dramatic red uplighting.
-  comedyWide: "/revive-photos/comedy-wide.jpg",
-  comedySide: "/revive-photos/comedy-side.jpg",
-  comedyPerformer: "/revive-photos/comedy-performer.jpg",
-  comedyRed: "/revive-photos/comedy-red.jpg",
-
-  // Cultural / multicultural celebrations — real South Asian weddings,
-  // reception dances, and traditional ceremonies hosted at Revive.
-  culturalDance: "/revive-photos/cultural-dance.jpg",
-  culturalCeremony: "/revive-photos/cultural-ceremony.jpg",
-
-  // Real amenities & atmosphere: the full bar and candlelit evening ambiance.
-  bar: "/revive-photos/bar.jpg",
-  ambiance: "/revive-photos/ambiance.jpg",
-
-  // Event-type cards mapped to fully-styled setup photos so each celebration
-  // type shows what a finished room looks like in that color story.
-  weddings: "/revive-photos/event-wedding-red-setup.jpg",
-  quinceaneras: "/revive-photos/setup-burgundy.jpg",
-  cultural: "/revive-photos/cultural-dance.jpg",
-  ceremonies: "/revive-photos/event-colorful-reception-setup.jpg",
-  corporate: "/revive-photos/scale-front.jpg",
-  concerts: "/revive-photos/comedy-red.jpg",
-  holiday: "/revive-photos/setup-burgundy.jpg",
-  prom: "/revive-photos/setup-teal.jpg",
-  birthdays: "/revive-photos/setup-greenery.jpg",
-  anniversaries: "/revive-photos/setup-garden.jpg",
-  fundraisers: "/revive-photos/scale-side.jpg",
-  memorials: "/revive-photos/ballroom-wide.jpg",
+  hero: P("event-wedding-red-setup"),
+  weddingDetail: P("wedding-table-detail"),
+  colorfulReception: P("event-colorful-reception-setup"),
+  culturalDance: P("cultural-dance"),
+  culturalCeremony: P("cultural-ceremony"),
+  comedyWide: P("comedy-wide"),
+  comedySide: P("comedy-side"),
+  comedyPerformer: P("comedy-performer"),
+  ballroomWide: P("ballroom-wide"),
+  ballroomAngle: P("ballroom-angle"),
+  scaleFront: P("scale-front"),
+  scaleSide: P("scale-side"),
+  scaleAngle: P("scale-angle"),
+  scaleRear: P("scale-rear"),
+  ambiance: P("ambiance"),
+  bar: P("bar"),
+  barLounge: P("bar-lounge"),
+  tableSetting: P("table-setting"),
+  centerpiece: P("centerpiece"),
+  catering: P("catering"),
+  exterior: P("exterior"),
 };
 
-export const recentEventsGallery: GalleryItem[] = [
-  {
-    id: "g1",
-    image: "/revive-photos/setup-blush.jpg",
-    alt: "Blush pink draping with floral centerpieces and chiavari chairs at a Revive wedding reception",
-    caption: "Blush & ivory wedding reception",
-    eventType: "Wedding",
-  },
-  {
-    id: "g2",
-    image: "/revive-photos/scale-front.jpg",
-    alt: "Wide front-on view of the Revive ballroom set with rows of round tables, chiavari chairs, and signature blue LED ceiling uplighting",
-    caption: "Full ballroom — set for 200+",
-    eventType: "Venue Scale",
-  },
-  {
-    id: "g3",
-    image: "/revive-photos/comedy-wide.jpg",
-    alt: "Stand-up comedy night at Revive Event Center with a performer on stage, black drape backdrop, and seated audience under red LED uplighting",
-    caption: "Comedy night — red uplighting",
-    eventType: "Live Show",
-  },
-  {
-    id: "g4",
-    image: "/revive-photos/setup-navy.jpg",
-    alt: "Navy and gold ballroom styling with mirrored dance floor for a corporate gala",
-    caption: "Navy & gold gala styling",
-    eventType: "Corporate Gala",
-  },
-  {
-    id: "g5",
-    image: "/revive-photos/scale-angle.jpg",
-    alt: "Angled wide view of the Revive ballroom showing depth, chandeliers, and dozens of round tables under blue LED uplighting",
-    caption: "Room depth & ceiling halo",
-    eventType: "Venue Scale",
-  },
-  {
-    id: "g6",
-    image: "/revive-photos/setup-burgundy.jpg",
-    alt: "Crimson red drapes and floral arrangements styled for a quinceañera celebration",
-    caption: "Crimson & ivory quinceañera",
-    eventType: "Quinceañera",
-  },
-  {
-    id: "g7",
-    image: "/revive-photos/comedy-performer.jpg",
-    alt: "Comedian on the Revive stage in front of a black velvet backdrop with purple stage lighting",
-    caption: "Stage, drape & spotlight",
-    eventType: "Live Show",
-  },
-  {
-    id: "g8",
-    image: "/revive-photos/setup-garden.jpg",
-    alt: "Garden greenery wall and wood-tone tablescape inside the Revive ballroom",
-    caption: "Garden greenery wall",
-    eventType: "Wedding",
-  },
-  {
-    id: "g9",
-    image: "/revive-photos/catering.jpg",
-    alt: "Artisan grazing table with charcuterie boards, fresh fruit, cheeses, and olives",
-    caption: "Artisan grazing tables",
-    eventType: "Catering",
-  },
-  {
-    id: "g10",
-    image: "/revive-photos/setup-teal.jpg",
-    alt: "Teal and ivory ballroom setup with white florals and a mirrored dance floor",
-    caption: "Teal & ivory color story",
-    eventType: "Wedding",
-  },
-  {
-    id: "g11",
-    image: "/revive-photos/scale-rear.jpg",
-    alt: "Rear-angle view of the Revive ballroom set with rows of tables under dramatic blue LED uplighting and chandeliers",
-    caption: "Capacity & flow",
-    eventType: "Venue Scale",
-  },
-  {
-    id: "g12",
-    image: "/revive-photos/setup-greenery.jpg",
-    alt: "Lush greenery wall and tall floral centerpieces inside the Revive ballroom",
-    caption: "Lush greenery & blooms",
-    eventType: "Milestone Celebration",
-  },
-  {
-    id: "g13",
-    image: "/revive-photos/exterior.jpg",
-    alt: "Revive Event Center storefront with custom gold lattice doors at 443 W 18th Street, Merced",
-    caption: "Welcome to Revive — 443 W 18th Street",
-    eventType: "Venue",
-  },
+export const ALT: Record<keyof typeof images, string> = {
+  hero: "Wedding reception at Revive with white floral centerpieces, red napkins and gold chairs under red ceiling lighting",
+  weddingDetail: "Round wedding table at Revive with white roses, red napkins, glass charger plates and gold chairs",
+  colorfulReception: "Reception at Revive with teal and purple linens, gold-covered chairs and a decorated stage",
+  culturalDance: "Guests dancing on a white dance floor under a crystal chandelier at Revive",
+  culturalCeremony: "Family celebration at Revive with musicians, bright drapes and floral arches",
+  comedyWide: "Comedy night at Revive with a performer on stage and a seated audience under red lighting",
+  comedySide: "Side view of a comedy show at Revive with the audience at candlelit tables",
+  comedyPerformer: "Comedian on the Revive stage in front of a black drape backdrop with purple lighting",
+  ballroomWide: "The empty Revive ballroom with three crystal chandeliers, a tiled ceiling and purple cove lighting",
+  ballroomAngle: "Angled view of the empty Revive ballroom showing wall sconces and the pass-through to the bar",
+  scaleFront: "The Revive ballroom set with rows of round tables and navy banquet chairs under blue cove lighting",
+  scaleSide: "Side view of the Revive ballroom set with round tables and navy banquet chairs",
+  scaleAngle: "Wide view of the Revive ballroom set for a large banquet with round tables and navy banquet chairs",
+  scaleRear: "Rear view of the Revive ballroom set with round tables under chandeliers and blue lighting",
+  ambiance: "Candlelit round tables under deep blue lighting for an evening event at Revive",
+  bar: "Revive's granite-topped bar with a lit back-bar shelf",
+  barLounge: "The bar area at Revive with gold and white cocktail tables",
+  tableSetting: "Black linen table setting at Revive with gold chargers, clear chairs and a candle centerpiece",
+  centerpiece: "Tall glass candle centerpiece with greenery on a black-linen table at Revive",
+  catering: "Grazing table with charcuterie, cheese, fruit and olives at an event at Revive",
+  exterior: "Revive Event Center storefront and sign at 443 W. 18th Street, Merced",
+};
+
+export type GalleryCategory = "Weddings & receptions" | "Celebrations" | "Live events" | "The room" | "Bar & details";
+
+export const GALLERY_CATEGORIES: GalleryCategory[] = [
+  "Weddings & receptions",
+  "Celebrations",
+  "Live events",
+  "The room",
+  "Bar & details",
+];
+
+export interface GalleryItem {
+  id: keyof typeof images;
+  caption: string;
+  category: GalleryCategory;
+}
+
+export const gallery: GalleryItem[] = [
+  { id: "colorfulReception", caption: "Colorful reception with stage", category: "Weddings & receptions" },
+  { id: "hero", caption: "Red and white wedding reception", category: "Weddings & receptions" },
+  { id: "weddingDetail", caption: "Wedding table detail", category: "Weddings & receptions" },
+  { id: "culturalDance", caption: "On the dance floor", category: "Celebrations" },
+  { id: "culturalCeremony", caption: "Family celebration with live music", category: "Celebrations" },
+  { id: "comedyWide", caption: "Comedy night", category: "Live events" },
+  { id: "comedySide", caption: "Show seating at candlelit tables", category: "Live events" },
+  { id: "comedyPerformer", caption: "Stage and drape backdrop", category: "Live events" },
+  { id: "ballroomWide", caption: "The empty room, front to back", category: "The room" },
+  { id: "ballroomAngle", caption: "The empty room, corner view", category: "The room" },
+  { id: "scaleAngle", caption: "Set for a large banquet", category: "The room" },
+  { id: "ambiance", caption: "Evening lighting", category: "The room" },
+  { id: "exterior", caption: "Our front door on W. 18th Street", category: "The room" },
+  { id: "barLounge", caption: "Bar and cocktail tables", category: "Bar & details" },
+  { id: "tableSetting", caption: "Black linen table setting", category: "Bar & details" },
+  { id: "centerpiece", caption: "Candle centerpiece", category: "Bar & details" },
+  { id: "catering", caption: "Grazing table", category: "Bar & details" },
 ];

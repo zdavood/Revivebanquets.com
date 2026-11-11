@@ -22,9 +22,8 @@ build = [ "pnpm", "--filter", "@workspace/revive-event-center", "run", "build" ]
 publicDir = "artifacts/revive-event-center/dist/public"
 serve = "static"
 
-[[services.production.rewrites]]
-from = "/*"
-to = "/index.html"
+# No catch-all rewrite: the site is one page, so unknown addresses should
+# return "not found" (public/404.html) instead of the home page with 200.
 
 [services.env]
 PORT = "22615"

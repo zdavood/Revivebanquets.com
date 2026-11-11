@@ -1,14 +1,39 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
-    <loc>https://revive-event-hub.replit.app/</loc>
+    <loc>https://revivebanquets.com/</loc>
+    <lastmod>2026-11-11</lastmod>
     <image:image>
-      <image:loc>https://revive-event-hub.replit.app/revive-photos/event-wedding-red-setup.jpg</image:loc>
-      <image:title>Red and white reception setup at Revive Event Center</image:title>
+      <image:loc>https://revivebanquets.com/revive-photos/event-wedding-red-setup.jpg</image:loc>
+      <image:title>Wedding reception at Revive Event Center, Merced</image:title>
     </image:image>
     <image:image>
-      <image:loc>https://revive-event-hub.replit.app/revive-photos/event-colorful-reception-setup.jpg</image:loc>
-      <image:title>Colorful reception tables and stage at Revive Event Center</image:title>
+      <image:loc>https://revivebanquets.com/revive-photos/event-colorful-reception-setup.jpg</image:loc>
+      <image:title>Colorful reception with stage at Revive Event Center</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://revivebanquets.com/revive-photos/ballroom-wide.jpg</image:loc>
+      <image:title>The empty ballroom at Revive Event Center</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://revivebanquets.com/revive-photos/scale-front.jpg</image:loc>
+      <image:title>Revive ballroom set for a large banquet</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://revivebanquets.com/revive-photos/cultural-dance.jpg</image:loc>
+      <image:title>Guests dancing at a celebration at Revive Event Center</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://revivebanquets.com/revive-photos/comedy-wide.jpg</image:loc>
+      <image:title>Comedy night at Revive Event Center</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://revivebanquets.com/revive-photos/bar-lounge.jpg</image:loc>
+      <image:title>The bar at Revive Event Center</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://revivebanquets.com/revive-photos/exterior.jpg</image:loc>
+      <image:title>Revive Event Center storefront, 443 W. 18th Street, Merced</image:title>
     </image:image>
   </url>
 </urlset>

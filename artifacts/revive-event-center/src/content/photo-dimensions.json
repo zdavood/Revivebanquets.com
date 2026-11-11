@@ -14,6 +14,10 @@
       {
         "file": "ambiance-1920.webp",
         "width": 1920
+      },
+      {
+        "file": "ambiance-2400.webp",
+        "width": 2400
       }
     ]
   },
@@ -32,6 +36,10 @@
       {
         "file": "ballroom-angle-1920.webp",
         "width": 1920
+      },
+      {
+        "file": "ballroom-angle-2400.webp",
+        "width": 2400
       }
     ]
   },
@@ -50,6 +58,32 @@
       {
         "file": "ballroom-wide-1920.webp",
         "width": 1920
+      },
+      {
+        "file": "ballroom-wide-2400.webp",
+        "width": 2400
+      }
+    ]
+  },
+  "bar-lounge.jpg": {
+    "width": 2400,
+    "height": 1620,
+    "sources": [
+      {
+        "file": "bar-lounge-640.webp",
+        "width": 640
+      },
+      {
+        "file": "bar-lounge-1280.webp",
+        "width": 1280
+      },
+      {
+        "file": "bar-lounge-1920.webp",
+        "width": 1920
+      },
+      {
+        "file": "bar-lounge-2400.webp",
+        "width": 2400
       }
     ]
   },
@@ -68,6 +102,10 @@
       {
         "file": "bar-1920.webp",
         "width": 1920
+      },
+      {
+        "file": "bar-2400.webp",
+        "width": 2000
       }
     ]
   },
@@ -86,6 +124,32 @@
       {
         "file": "catering-1920.webp",
         "width": 1920
+      },
+      {
+        "file": "catering-2400.webp",
+        "width": 2400
+      }
+    ]
+  },
+  "centerpiece.jpg": {
+    "width": 1957,
+    "height": 2400,
+    "sources": [
+      {
+        "file": "centerpiece-640.webp",
+        "width": 640
+      },
+      {
+        "file": "centerpiece-1280.webp",
+        "width": 1280
+      },
+      {
+        "file": "centerpiece-1920.webp",
+        "width": 1920
+      },
+      {
+        "file": "centerpiece-2400.webp",
+        "width": 1957
       }
     ]
   },
@@ -104,24 +168,10 @@
       {
         "file": "comedy-performer-1920.webp",
         "width": 1920
-      }
-    ]
-  },
-  "comedy-red.jpg": {
-    "width": 1939,
-    "height": 1406,
-    "sources": [
-      {
-        "file": "comedy-red-640.webp",
-        "width": 640
       },
       {
-        "file": "comedy-red-1280.webp",
-        "width": 1280
-      },
-      {
-        "file": "comedy-red-1920.webp",
-        "width": 1920
+        "file": "comedy-performer-2400.webp",
+        "width": 1939
       }
     ]
   },
@@ -140,6 +190,10 @@
       {
         "file": "comedy-side-1920.webp",
         "width": 1920
+      },
+      {
+        "file": "comedy-side-2400.webp",
+        "width": 2400
       }
     ]
   },
@@ -158,12 +212,16 @@
       {
         "file": "comedy-wide-1920.webp",
         "width": 1920
+      },
+      {
+        "file": "comedy-wide-2400.webp",
+        "width": 2400
       }
     ]
   },
   "cultural-ceremony.jpg": {
     "width": 1680,
-    "height": 1050,
+    "height": 943,
     "sources": [
       {
         "file": "cultural-ceremony-640.webp",
@@ -198,8 +256,8 @@
     ]
   },
   "event-colorful-reception-setup.jpg": {
-    "width": 2200,
-    "height": 1650,
+    "width": 2400,
+    "height": 1800,
     "sources": [
       {
         "file": "event-colorful-reception-setup-640.webp",
@@ -212,12 +270,16 @@
       {
         "file": "event-colorful-reception-setup-1920.webp",
         "width": 1920
+      },
+      {
+        "file": "event-colorful-reception-setup-2400.webp",
+        "width": 2400
       }
     ]
   },
   "event-wedding-red-setup.jpg": {
-    "width": 2200,
-    "height": 1650,
+    "width": 2400,
+    "height": 1800,
     "sources": [
       {
         "file": "event-wedding-red-setup-640.webp",
@@ -230,12 +292,16 @@
       {
         "file": "event-wedding-red-setup-1920.webp",
         "width": 1920
+      },
+      {
+        "file": "event-wedding-red-setup-2400.webp",
+        "width": 2400
       }
     ]
   },
   "exterior.jpg": {
-    "width": 1500,
-    "height": 2000,
+    "width": 2400,
+    "height": 2063,
     "sources": [
       {
         "file": "exterior-640.webp",
@@ -247,7 +313,11 @@
       },
       {
         "file": "exterior-1920.webp",
-        "width": 1500
+        "width": 1920
+      },
+      {
+        "file": "exterior-2400.webp",
+        "width": 2400
       }
     ]
   },
@@ -266,6 +336,10 @@
       {
         "file": "scale-angle-1920.webp",
         "width": 1920
+      },
+      {
+        "file": "scale-angle-2400.webp",
+        "width": 2400
       }
     ]
   },
@@ -284,6 +358,10 @@
       {
         "file": "scale-front-1920.webp",
         "width": 1920
+      },
+      {
+        "file": "scale-front-2400.webp",
+        "width": 2400
       }
     ]
   },
@@ -302,6 +380,10 @@
       {
         "file": "scale-rear-1920.webp",
         "width": 1920
+      },
+      {
+        "file": "scale-rear-2400.webp",
+        "width": 2400
       }
     ]
   },
@@ -320,90 +402,54 @@
       {
         "file": "scale-side-1920.webp",
         "width": 1920
+      },
+      {
+        "file": "scale-side-2400.webp",
+        "width": 2400
       }
     ]
   },
-  "setup-blush.jpg": {
-    "width": 1200,
-    "height": 1200,
+  "table-setting.jpg": {
+    "width": 2400,
+    "height": 1704,
     "sources": [
       {
-        "file": "setup-blush-640.webp",
+        "file": "table-setting-640.webp",
         "width": 640
       },
       {
-        "file": "setup-blush-1280.webp",
-        "width": 1200
+        "file": "table-setting-1280.webp",
+        "width": 1280
+      },
+      {
+        "file": "table-setting-1920.webp",
+        "width": 1920
+      },
+      {
+        "file": "table-setting-2400.webp",
+        "width": 2400
       }
     ]
   },
-  "setup-burgundy.jpg": {
-    "width": 1200,
-    "height": 1200,
+  "wedding-table-detail.jpg": {
+    "width": 2400,
+    "height": 1394,
     "sources": [
       {
-        "file": "setup-burgundy-640.webp",
+        "file": "wedding-table-detail-640.webp",
         "width": 640
       },
       {
-        "file": "setup-burgundy-1280.webp",
-        "width": 1200
-      }
-    ]
-  },
-  "setup-garden.jpg": {
-    "width": 1200,
-    "height": 1200,
-    "sources": [
-      {
-        "file": "setup-garden-640.webp",
-        "width": 640
+        "file": "wedding-table-detail-1280.webp",
+        "width": 1280
       },
       {
-        "file": "setup-garden-1280.webp",
-        "width": 1200
-      }
-    ]
-  },
-  "setup-greenery.jpg": {
-    "width": 1200,
-    "height": 1200,
-    "sources": [
-      {
-        "file": "setup-greenery-640.webp",
-        "width": 640
+        "file": "wedding-table-detail-1920.webp",
+        "width": 1920
       },
       {
-        "file": "setup-greenery-1280.webp",
-        "width": 1200
-      }
-    ]
-  },
-  "setup-navy.jpg": {
-    "width": 1200,
-    "height": 1200,
-    "sources": [
-      {
-        "file": "setup-navy-640.webp",
-        "width": 640
-      },
-      {
-        "file": "setup-navy-1280.webp",
-        "width": 1200
-      }
-    ]
-  },
-  "setup-teal.jpg": {
-    "width": 1200,
-    "height": 1200,
-    "sources": [
-      {
-        "file": "setup-teal-640.webp",
-        "width": 640
-      },
-      {
-        "file": "setup-teal-1280.webp",
-        "width": 1200
+        "file": "wedding-table-detail-2400.webp",
+        "width": 2400
       }
     ]
   }
